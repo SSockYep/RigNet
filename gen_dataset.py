@@ -65,7 +65,7 @@ def genDataset(process_id):
     for model_id in model_list:
         remeshed_obj_filename = os.path.join(dataset_folder, 'obj_remesh/{:d}.obj'.format(model_id))
         info_filename = os.path.join(dataset_folder, 'rig_info_remesh/{:d}.txt'.format(model_id))
-        remeshed_obj = o3d.io.read_triangle_mesh(remeshed_obj_filename)
+        remeshed_obj = o3d.io.read_triangle_mesh(remeshed_obj_filename, enable_post_processing=True)
         remesh_obj_v = np.asarray(remeshed_obj.vertices)
         if not remeshed_obj.has_vertex_normals():
             remeshed_obj.compute_vertex_normals()
@@ -115,6 +115,8 @@ def genDataset(process_id):
 
         input_samples = []  # mesh_vertex_id, (bone_id, 1 / D_g, is_leaf) * N
         ground_truth_labels = []  # w_1, w_2, ..., w_N
+        if (len(remesh_obj_v) != len(rig_info.joint_skin)):
+            print("remesh_obj_v: {} rig_info.joint_skin: {} model_id: {}".format(len(remesh_obj_v), len(rig_info.joint_skin), model_id))
         for vert_remesh_id in range(len(remesh_obj_v)):
             this_sample = [vert_remesh_id]
             this_label = []
@@ -161,7 +163,9 @@ def genDataset(process_id):
 
 
 if __name__ == '__main__':
-    dataset_folder = "/media/zhanxu/4T/ModelResource_RigNetv1_preproccessed/"
+    dataset_folder = "./RigNetData/"
     p = Pool(8)
     p.map(genDataset, [0, 1, 2, 3, 4, 5, 6, 7])
+    # for i in range(8):
+    #     genDataset(i)
     #genDataset(0)

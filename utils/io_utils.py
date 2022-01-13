@@ -12,6 +12,7 @@ from utils.os_utils import mkdir_p
 from utils.tree_utils import TreeNode
 from utils.rig_parser import Info
 from geometric_proc.compute_volumetric_geodesic import get_bones
+import copy
 
 
 def readPly(filename):
@@ -91,7 +92,8 @@ def mapping_bone_index(bones_old, bones_new):
 
 def assemble_skel_skin(skel, attachment):
     bones_old, bone_names_old, _ = get_bones(skel)
-    skel_new = add_duplicate_joints(skel)
+    skel_new = copy.deepcopy(skel)
+    skel_new = add_duplicate_joints(skel_new)
     bones_new, bone_names_new, _ = get_bones(skel_new)
     bone_map = mapping_bone_index(bones_old, bones_new)
     skel_new.joint_pos = skel_new.get_joint_dict()

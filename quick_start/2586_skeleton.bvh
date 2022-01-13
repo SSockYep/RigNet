@@ -1,0 +1,51 @@
+HIERARCHY
+ROOT Bone
+{
+	OFFSET 0.000000 0.000736 0.055206
+	CHANNELS 6 Xposition Yposition Zposition Xrotation Yrotation Zrotation
+	JOINT Bone.001
+	{
+		OFFSET -0.000000 0.013986 0.123109
+		CHANNELS 3 Xrotation Yrotation Zrotation
+		JOINT Bone.004
+		{
+			OFFSET 0.121891 -0.011398 0.103977
+			CHANNELS 6 Xposition Yposition Zposition Xrotation Yrotation Zrotation
+			End Site
+			{
+				OFFSET 0.008270 0.006309 0.089106
+			}
+		}
+		JOINT Bone.005
+		{
+			OFFSET -0.121891 -0.011398 0.103977
+			CHANNELS 6 Xposition Yposition Zposition Xrotation Yrotation Zrotation
+			End Site
+			{
+				OFFSET -0.008270 0.006309 0.089106
+			}
+		}
+	}
+	JOINT Bone.002
+	{
+		OFFSET -0.158257 0.016749 0.121270
+		CHANNELS 6 Xposition Yposition Zposition Xrotation Yrotation Zrotation
+		End Site
+		{
+			OFFSET -0.297540 0.000977 0.213542
+		}
+	}
+	JOINT Bone.003
+	{
+		OFFSET 0.158257 0.016749 0.121270
+		CHANNELS 6 Xposition Yposition Zposition Xrotation Yrotation Zrotation
+		End Site
+		{
+			OFFSET 0.297540 0.000977 0.213542
+		}
+	}
+}
+MOTION
+Frames: 1
+Frame Time: 0.041667
+0.000000 0.000736 0.055206 -0.000000 0.000000 0.000000 -0.000001 0.000000 0.000000 0.121891 -0.011398 0.103977 -0.000001 0.000000 0.000000 -0.121891 -0.011398 0.103977 -0.000001 0.000000 0.000001 -0.158257 0.016749 0.121270 0.000000 -0.000002 0.000000 0.158257 0.016749 0.121270 -0.000000 -0.000001 0.000000 

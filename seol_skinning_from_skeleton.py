@@ -1,13 +1,6 @@
-# ---------------------------------------------------------------------------------------------------------
-# Name:        quick_start.py
-# Purpose:     An easy-to-use demo. Also serves as an interface of the pipeline.
-# RigNet Copyright 2020 University of Massachusetts
-# RigNet is made available under General Public License Version 3 (GPLv3), or under a Commercial License.
-# Please see the LICENSE README.txt file in the main directory for more information and instruction on using and licensing RigNet.
-# ---------------------------------------------------------------------------------------------------------
 import pdb
+
 import os
-from sys import platform
 import trimesh
 import numpy as np
 import open3d as o3d
@@ -17,24 +10,17 @@ import torch
 from torch_geometric.data import Data
 from torch_geometric.utils import add_self_loops
 
-from utils import binvox_rw
 from utils.rig_parser import Skel, Info
 from utils.tree_utils import TreeNode
 from utils.io_utils import assemble_skel_skin
-from utils.vis_utils import draw_shifted_pts, show_obj_skel, show_mesh_vox
-from utils.cluster_utils import meanshift_cluster, nms_meanshift
-from utils.mst_utils import increase_cost_for_outside_bone, primMST_symmetry, loadSkel_recur, inside_check, flip
+from utils.vis_utils import show_obj_skel
 
 from geometric_proc.common_ops import get_bones, calc_surface_geodesic
 from geometric_proc.compute_volumetric_geodesic import pts2line, calc_pts2bone_visible_mat
 
 from gen_dataset import get_tpl_edges, get_geo_edges
-from mst_generate import sample_on_bone, getInitId
 from run_skinning import post_filter
 
-from models.GCN import JOINTNET_MASKNET_MEANSHIFT as JOINTNET
-from models.ROOT_GCN import ROOTNET
-from models.PairCls_GCN import PairCls as BONENET
 from models.SKINNING import SKINNET
 
 
@@ -52,11 +38,11 @@ def normalize_obj(mesh_v):
     return mesh_v, pivot, scale
 
 
-def create_single_data(mesh_filaname):
+def create_single_data(mesh_filaname, skeleton_filename):
     """
     create input data for the network. The data is wrapped by Data structure in pytorch-geometric library
     :param mesh_filaname: name of the input mesh
-    :return: wrapped data, voxelized mesh, and geodesic distance matrix of all vertices
+    :return: wrapped data, skeleton data and geodesic distance matrix of all vertices
     """
     mesh = o3d.io.read_triangle_mesh(mesh_filaname)
     mesh.compute_vertex_normals()
@@ -90,131 +76,11 @@ def create_single_data(mesh_filaname):
 
     # batch
     batch = torch.zeros(len(v), dtype=torch.long)
-
-    # voxel
-    if not os.path.exists(mesh_filaname.replace('_remesh.obj', '_normalized.binvox')):
-        if platform == "linux" or platform == "linux2":
-            os.system("./binvox -d 88 -pb " + mesh_filaname.replace("_remesh.obj", "_normalized.obj"))
-        elif platform == "win32":
-            os.system("binvox.exe -d 88 " + mesh_filaname.replace("_remesh.obj", "_normalized.obj"))
-        else:
-            raise Exception('Sorry, we currently only support windows and linux.')
-
-    with open(mesh_filaname.replace('_remesh.obj', '_normalized.binvox'), 'rb') as fvox:
-        vox = binvox_rw.read_as_3d_array(fvox)
+    skeleton = Info()
+    skeleton.bvh_load(skeleton_filename)
 
     data = Data(x=v[:, 3:6], pos=v[:, 0:3], tpl_edge_index=tpl_e, geo_edge_index=geo_e, batch=batch)
-    return data, vox, surface_geodesic, translation_normalize, scale_normalize
-
-
-def predict_joints(input_data, vox, joint_pred_net, threshold, bandwidth=None, mesh_filename=None):
-    """
-    Predict joints
-    :param input_data: wrapped input data
-    :param vox: voxelized mesh
-    :param joint_pred_net: network for predicting joints
-    :param threshold: density threshold to filter out shifted points
-    :param bandwidth: bandwidth for meanshift clustering
-    :param mesh_filename: mesh filename for visualization
-    :return: wrapped data with predicted joints, pair-wise bone representation added.
-    """
-    data_displacement, _, attn_pred, bandwidth_pred = joint_pred_net(input_data)
-    y_pred = data_displacement + input_data.pos
-    y_pred_np = y_pred.data.cpu().numpy()
-    attn_pred_np = attn_pred.data.cpu().numpy()
-    y_pred_np, index_inside = inside_check(y_pred_np, vox)
-    attn_pred_np = attn_pred_np[index_inside, :]
-    y_pred_np = y_pred_np[attn_pred_np.squeeze() > 1e-3]
-    attn_pred_np = attn_pred_np[attn_pred_np.squeeze() > 1e-3]
-
-    # symmetrize points by reflecting
-    y_pred_np_reflect = y_pred_np * np.array([[-1, 1, 1]])
-    y_pred_np = np.concatenate((y_pred_np, y_pred_np_reflect), axis=0)
-    attn_pred_np = np.tile(attn_pred_np, (2, 1))
-
-    #img = draw_shifted_pts(mesh_filename, y_pred_np, weights=attn_pred_np)
-    if bandwidth is None:
-        bandwidth = bandwidth_pred.item()
-    y_pred_np = meanshift_cluster(y_pred_np, bandwidth, attn_pred_np, max_iter=40)
-    #img = draw_shifted_pts(mesh_filename, y_pred_np, weights=attn_pred_np)
-
-    Y_dist = np.sum(((y_pred_np[np.newaxis, ...] - y_pred_np[:, np.newaxis, :]) ** 2), axis=2)
-    density = np.maximum(bandwidth ** 2 - Y_dist, np.zeros(Y_dist.shape))
-    density = np.sum(density, axis=0)
-    density_sum = np.sum(density)
-    y_pred_np = y_pred_np[density / density_sum > threshold]
-    attn_pred_np = attn_pred_np[density / density_sum > threshold][:, 0]
-    density = density[density / density_sum > threshold]
-
-    #img = draw_shifted_pts(mesh_filename, y_pred_np, weights=attn_pred_np)
-    pred_joints = nms_meanshift(y_pred_np, density, bandwidth)
-    pred_joints, _ = flip(pred_joints)
-    #img = draw_shifted_pts(mesh_filename, pred_joints)
-
-    # prepare and add new data members
-    pairs = list(it.combinations(range(pred_joints.shape[0]), 2))
-    pair_attr = []
-    for pr in pairs:
-        dist = np.linalg.norm(pred_joints[pr[0]] - pred_joints[pr[1]])
-        bone_samples = sample_on_bone(pred_joints[pr[0]], pred_joints[pr[1]])
-        bone_samples_inside, _ = inside_check(bone_samples, vox)
-        outside_proportion = len(bone_samples_inside) / (len(bone_samples) + 1e-10)
-        attr = np.array([dist, outside_proportion, 1])
-        pair_attr.append(attr)
-    pairs = np.array(pairs)
-    pair_attr = np.array(pair_attr)
-    pairs = torch.from_numpy(pairs).float()
-    pair_attr = torch.from_numpy(pair_attr).float()
-    pred_joints = torch.from_numpy(pred_joints).float()
-    joints_batch = torch.zeros(len(pred_joints), dtype=torch.long)
-    pairs_batch = torch.zeros(len(pairs), dtype=torch.long)
-
-    input_data.joints = pred_joints
-    input_data.pairs = pairs
-    input_data.pair_attr = pair_attr
-    input_data.joints_batch = joints_batch
-    input_data.pairs_batch = pairs_batch
-    return input_data
-
-
-def predict_skeleton(input_data, vox, root_pred_net, bone_pred_net, mesh_filename):
-    """
-    Predict skeleton structure based on joints
-    :param input_data: wrapped data
-    :param vox: voxelized mesh
-    :param root_pred_net: network to predict root
-    :param bone_pred_net: network to predict pairwise connectivity cost
-    :param mesh_filename: meshfilename for debugging
-    :return: predicted skeleton structure
-    """
-    root_id = getInitId(input_data, root_pred_net)
-    pred_joints = input_data.joints.data.cpu().numpy()
-
-    with torch.no_grad():
-        connect_prob, _ = bone_pred_net(input_data, permute_joints=False)
-        connect_prob = torch.sigmoid(connect_prob)
-    pair_idx = input_data.pairs.long().data.cpu().numpy()
-    prob_matrix = np.zeros((len(input_data.joints), len(input_data.joints)))
-    prob_matrix[pair_idx[:, 0], pair_idx[:, 1]] = connect_prob.data.cpu().numpy().squeeze()
-    prob_matrix = prob_matrix + prob_matrix.transpose()
-    cost_matrix = -np.log(prob_matrix + 1e-10)
-    cost_matrix = increase_cost_for_outside_bone(cost_matrix, pred_joints, vox)
-
-    pred_skel = Info()
-    parent, key, root_id = primMST_symmetry(cost_matrix, root_id, pred_joints)
-    for i in range(len(parent)):
-        if parent[i] == -1:
-            pred_skel.root = TreeNode('root', tuple(pred_joints[i]))
-            break
-    loadSkel_recur(pred_skel.root, i, None, pred_joints, parent)
-    pred_skel.joint_pos = pred_skel.get_joint_dict()
-    #show_mesh_vox(mesh_filename, vox, pred_skel.root)
-    try:
-        img = show_obj_skel(mesh_filename, pred_skel.root)
-    except:
-        print("Visualization is not supported on headless servers. Please consider other headless rendering methods.")
-    return pred_skel
-
+    return data, skeleton, surface_geodesic, translation_normalize, scale_normalize
 
 def calc_geodesic_matrix(bones, mesh_v, surface_geodesic, mesh_filename, subsampling=False):
     """
@@ -272,7 +138,7 @@ def calc_geodesic_matrix(bones, mesh_v, surface_geodesic, mesh_filename, subsamp
     return visible_matrix
 
 
-def predict_skinning(input_data, pred_skel, skin_pred_net, surface_geodesic, mesh_filename, subsampling=False):
+def predict_skinning(input_data, pred_skel, skin_pred_net, surface_geodesic, mesh_filename, subsampling=False, randomEncode=False):
     """
     predict skinning
     :param input_data: wrapped input data
@@ -322,11 +188,14 @@ def predict_skinning(input_data, pred_skel, skin_pred_net, surface_geodesic, mes
     input_data.skin_input = skin_input
     input_data.to(device)
 
-    skin_pred = skin_pred_net(data)
+    skin_pred, encoded = skin_pred_net(data)
+    if randomEncode:
+        random_sample = torch.randn(encoded.shape).cuda()
+        skin_pred = skin_pred_net.cls_branch(random_sample)
     skin_pred = torch.softmax(skin_pred, dim=1)
     skin_pred = skin_pred.data.cpu().numpy()
     skin_pred = skin_pred * loss_mask
-
+    
     skin_nn = skin_nn[:, 0:num_nearest_bone]
     skin_pred_full = np.zeros((len(skin_pred), len(bone_names)))
     for v in range(len(skin_pred)):
@@ -384,27 +253,6 @@ if __name__ == '__main__':
     print("loading all networks...")
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-    jointNet = JOINTNET()
-    jointNet.to(device)
-    jointNet.eval()
-    jointNet_checkpoint = torch.load('checkpoints/gcn_meanshift/model_best.pth.tar')
-    jointNet.load_state_dict(jointNet_checkpoint['state_dict'])
-    print("     joint prediction network loaded.")
-
-    rootNet = ROOTNET()
-    rootNet.to(device)
-    rootNet.eval()
-    rootNet_checkpoint = torch.load('checkpoints/rootnet/model_best.pth.tar')
-    rootNet.load_state_dict(rootNet_checkpoint['state_dict'])
-    print("     root prediction network loaded.")
-
-    boneNet = BONENET()
-    boneNet.to(device)
-    boneNet.eval()
-    boneNet_checkpoint = torch.load('checkpoints/bonenet/model_best.pth.tar')
-    boneNet.load_state_dict(boneNet_checkpoint['state_dict'])
-    print("     connection prediction network loaded.")
-
     skinNet = SKINNET(nearest_bone=5, use_Dg=True, use_Lf=True)
     skinNet_checkpoint = torch.load('checkpoints/skinnet/model_best.pth.tar')
     skinNet.load_state_dict(skinNet_checkpoint['state_dict'])
@@ -412,49 +260,36 @@ if __name__ == '__main__':
     skinNet.eval()
     print("     skinning prediction network loaded.")
 
-    # Here we provide 16~17 examples. For best results, we will need to override the learned bandwidth and its associated threshold
     # To process other input characters, please first try the learned bandwidth (0.0429 in the provided model), and the default threshold 1e-5.
     # We also use these two default parameters for processing all test models in batch.
-
-    model_id, bandwidth, threshold = "rigging_test", 0.042, 2e-5 # riggint_test is 1347
-    #model_id, bandwidth, threshold = "smith", None, 1e-5
-    #model_id, bandwidth, threshold = "17872", 0.045, 0.75e-5
-    #model_id, bandwidth, threshold = "8210", 0.05, 1e-5
-    #model_id, bandwidth, threshold = "8330", 0.05, 0.8e-5
-    #model_id, bandwidth, threshold = "9477", 0.043, 2.5e-5
-    #model_id, bandwidth, threshold = "17364", 0.058, 0.3e-5
-    #model_id, bandwidth, threshold = "15930", 0.055, 0.4e-5
-    #model_id, bandwidth, threshold = "8333", 0.04, 2e-5
-    #model_id, bandwidth, threshold = "8338", 0.052, 0.9e-5
-    #model_id, bandwidth, threshold = "3318", 0.03, 0.92e-5
-    #model_id, bandwidth, threshold = "15446", 0.032, 0.58e-5
-    #model_id, bandwidth, threshold = "1347", 0.062, 3e-5
-    #model_id, bandwidth, threshold = "11814", 0.06, 0.6e-5
-    #model_id, bandwidth, threshold = "2982", 0.045, 0.3e-5
-    #model_id, bandwidth, threshold = "2586", 0.05, 0.6e-5
-    #model_id, bandwidth, threshold = "8184", 0.05, 0.4e-5
-    #model_id, bandwidth, threshold = "9000", 0.035, 0.16e-5
+    bandwidth, threshold = 0.0429, 1e-5
+    #model_id = "simple_box"
+    # model_id = "rigging_test"
+    #model_id = "test"
+    # model_id = "test2"
+    # model_id = "8184"
+    model_id = "2586"
 
     # create data used for inferece
     print("creating data for model ID {:s}".format(model_id))
     mesh_filename = os.path.join(input_folder, '{:s}_remesh.obj'.format(model_id))
-    data, vox, surface_geodesic, translation_normalize, scale_normalize = create_single_data(mesh_filename)
+    skeleton_filename = os.path.join(input_folder, '{:s}_skeleton.bvh'.format(model_id))
+    data, skeleton, surface_geodesic, translation_normalize, scale_normalize = create_single_data(mesh_filename, skeleton_filename)
     data.to(device)
 
-    print("predicting joints")
-    data = predict_joints(data, vox, jointNet, threshold, bandwidth=bandwidth,
-                          mesh_filename=mesh_filename.replace("_remesh.obj", "_normalized.obj"))
-    data.to(device)
-    print("predicting connectivity")
-    pred_skeleton = predict_skeleton(data, vox, rootNet, boneNet,
-                                     mesh_filename=mesh_filename.replace("_remesh.obj", "_normalized.obj"))
+    try:
+        img = show_obj_skel(mesh_filename, skeleton.root)
+    except:
+        print("Visualization is not supported on headless servers. Please consider other headless rendering methods.")
+
     print("predicting skinning")
-    pred_rig = predict_skinning(data, pred_skeleton, skinNet, surface_geodesic,
+    pred_rig = predict_skinning(data, skeleton, skinNet, surface_geodesic,
                                 mesh_filename.replace("_remesh.obj", "_normalized.obj"),
                                 subsampling=downsample_skinning)
 
     # here we reverse the normalization to the original scale and position
     pred_rig.normalize(scale_normalize, -translation_normalize)
+    # pdb.set_trace()
 
     print("Saving result")
     if True:
@@ -466,3 +301,24 @@ if __name__ == '__main__':
         # here we use remeshed mesh
         pred_rig.save(mesh_filename.replace('.obj', '_rig.txt'))
     print("Done!")
+
+    print("test for 10 random rig")
+    for i in range(10):
+        print("predicting skinning")
+        pred_rig = predict_skinning(data, skeleton, skinNet, surface_geodesic,
+                                    mesh_filename.replace("_remesh.obj", "_normalized.obj"),
+                                    subsampling=downsample_skinning, randomEncode=True)
+
+        # here we reverse the normalization to the original scale and position
+        pred_rig.normalize(scale_normalize, -translation_normalize)
+        # pdb.set_trace()
+
+        print("Saving result")
+        if True:
+            # here we use original mesh tesselation (without remeshing)
+            mesh_filename_ori = os.path.join(input_folder, '{:s}_ori.obj'.format(model_id))
+            pred_rig = tranfer_to_ori_mesh(mesh_filename_ori, mesh_filename, pred_rig)
+            pred_rig.save(mesh_filename_ori.replace('.obj', '_rig{}.txt'.format(i)))
+        else:
+            # here we use remeshed mesh
+            pred_rig.save(mesh_filename.replace('.obj', '_rig.txt'))

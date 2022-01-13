@@ -1,362 +1,1978 @@
-joints root 0.00000000 0.18975128 -0.01149576
-joints root_dup_0 0.00466311 0.19441439 -0.00683264
-joints root_dup_1 0.00326149 0.19301277 -0.00823426
-joints root_dup_2 0.00466311 0.19441439 -0.00683264
-joints joint_0 -0.11571667 0.29352751 -0.01241337
-joints joint_4 0.00000000 0.29837871 -0.00709735
-joints joint_7 0.11571667 0.29352751 -0.01241337
-joints joint_2 -0.18222812 0.29559976 -0.01333729
-joints joint_6 0.00000000 0.42314503 -0.01126709
-joints joint_9 0.18222812 0.29559976 -0.01333729
-joints joint_3 -0.32285655 0.30077896 -0.00988904
-joints joint_10 0.32285655 0.30077896 -0.00988904
-joints joint_1 -0.41435391 0.29550591 0.00468795
-joints joint_8 0.41435391 0.29550591 0.00468795
-root root
-skin 0 root_dup_0 0.5812 joint_0 0.4188 
-skin 1 root_dup_0 0.2907 joint_0 0.5032 joint_2 0.2060 
-skin 2 root_dup_0 0.4215 joint_0 0.3714 joint_4 0.2071 
-skin 3 root_dup_0 0.6113 joint_0 0.3887 
-skin 4 root_dup_0 0.3934 joint_0 0.6066 
-skin 5 root_dup_0 0.5522 joint_0 0.4478 
-skin 6 root_dup_0 0.2006 joint_0 0.5614 joint_2 0.2380 
-skin 7 root_dup_0 0.3991 joint_0 0.6009 
-skin 8 joint_0 0.5544 joint_2 0.4456 
-skin 9 joint_0 0.4219 joint_2 0.5781 
-skin 10 joint_0 0.5427 joint_2 0.4573 
-skin 11 joint_0 0.2766 joint_2 0.7234 
-skin 12 joint_0 0.4377 joint_2 0.5623 
-skin 13 joint_2 1.0000 
-skin 14 joint_0 0.3038 joint_2 0.6962 
-skin 15 joint_2 0.6313 joint_3 0.3687 
-skin 16 joint_2 0.4697 joint_3 0.5303 
-skin 17 joint_3 1.0000 
-skin 18 joint_3 1.0000 
-skin 19 joint_3 1.0000 
-skin 20 joint_2 0.3098 joint_3 0.6902 
-skin 21 joint_3 1.0000 
-skin 22 joint_3 1.0000 
-skin 23 joint_2 0.6796 joint_3 0.3204 
-skin 24 joint_2 0.5202 joint_3 0.4798 
-skin 25 joint_2 1.0000 
-skin 26 joint_2 0.6930 joint_3 0.3070 
-skin 27 joint_2 0.5264 joint_3 0.4736 
-skin 28 joint_2 0.7019 joint_3 0.2981 
-skin 29 joint_3 1.0000 
-skin 30 joint_2 0.4718 joint_3 0.5282 
-skin 31 joint_3 1.0000 
-skin 32 joint_3 1.0000 
-skin 33 joint_3 0.7102 joint_1 0.2898 
-skin 34 joint_3 0.4610 joint_1 0.5390 
-skin 35 joint_3 0.5395 joint_1 0.4605 
-skin 36 joint_3 0.2942 joint_1 0.7058 
-skin 37 joint_3 0.5139 joint_1 0.4861 
-skin 38 joint_3 0.2819 joint_1 0.7181 
-skin 39 joint_3 0.4345 joint_1 0.5655 
-skin 40 joint_1 1.0000 
-skin 41 joint_3 0.4810 joint_1 0.5190 
-skin 42 joint_3 0.2720 joint_1 0.7280 
-skin 43 joint_3 0.3855 joint_1 0.6145 
-skin 44 joint_3 0.4550 joint_1 0.5450 
-skin 45 joint_3 0.6201 joint_1 0.3799 
-skin 46 joint_3 0.4266 joint_1 0.5734 
-skin 47 joint_3 1.0000 
-skin 48 joint_3 0.5238 joint_1 0.4762 
-skin 49 joint_3 0.7228 joint_1 0.2772 
-skin 50 joint_3 0.5092 joint_1 0.4908 
-skin 51 joint_3 0.2946 joint_1 0.7054 
-skin 52 joint_3 0.2971 joint_1 0.7029 
-skin 53 joint_3 0.4837 joint_1 0.5163 
-skin 54 joint_3 0.3667 joint_1 0.6333 
-skin 55 joint_3 0.4357 joint_1 0.5643 
-skin 56 joint_3 0.2748 joint_1 0.7252 
-skin 57 joint_1 1.0000 
-skin 58 joint_3 1.0000 
-skin 59 joint_1 1.0000 
-skin 60 joint_1 1.0000 
-skin 61 joint_2 0.2908 joint_3 0.7092 
-skin 62 joint_3 1.0000 
-skin 63 joint_1 1.0000 
-skin 64 joint_1 1.0000 
-skin 65 joint_1 1.0000 
-skin 66 joint_1 1.0000 
-skin 67 joint_1 1.0000 
-skin 68 joint_1 1.0000 
-skin 69 joint_2 0.2927 joint_3 0.7073 
-skin 70 root_dup_2 1.0000 
-skin 71 root_dup_2 1.0000 
-skin 72 root_dup_2 1.0000 
-skin 73 root_dup_1 0.5080 root_dup_2 0.4920 
-skin 74 root_dup_0 0.2587 root_dup_1 0.5317 root_dup_2 0.2096 
-skin 75 root_dup_1 1.0000 
-skin 76 root_dup_1 1.0000 
-skin 77 root_dup_1 1.0000 
-skin 78 root_dup_1 1.0000 
-skin 79 root_dup_0 0.4819 root_dup_1 0.5181 
-skin 80 root_dup_0 1.0000 
-skin 81 root_dup_0 1.0000 
-skin 82 root_dup_0 1.0000 
-skin 83 root_dup_0 0.7223 joint_4 0.2777 
-skin 84 joint_4 1.0000 
-skin 85 joint_4 1.0000 
-skin 86 root_dup_0 0.4948 joint_0 0.1860 joint_4 0.3192 
-skin 87 root_dup_0 1.0000 
-skin 88 root_dup_0 0.4938 root_dup_1 0.2419 joint_4 0.2643 
-skin 89 root_dup_0 0.4524 root_dup_1 0.5476 
-skin 90 root_dup_1 0.4809 joint_4 0.5191 
-skin 91 root_dup_1 1.0000 
-skin 92 root_dup_1 0.5501 root_dup_2 0.4499 
-skin 93 root_dup_0 0.2642 root_dup_1 0.7358 
-skin 94 root_dup_1 1.0000 
-skin 95 root_dup_1 0.4903 root_dup_2 0.5097 
-skin 96 root_dup_1 1.0000 
-skin 97 root_dup_0 0.2677 root_dup_1 0.7323 
-skin 98 root_dup_0 0.6762 root_dup_1 0.3238 
-skin 99 root_dup_0 0.3313 root_dup_1 0.6687 
-skin 100 root_dup_0 1.0000 
-skin 101 root_dup_1 1.0000 
-skin 102 root_dup_1 0.6888 root_dup_2 0.3112 
-skin 103 root_dup_1 0.2895 root_dup_2 0.7105 
-skin 104 root_dup_2 1.0000 
-skin 105 root_dup_2 1.0000 
-skin 106 root_dup_2 0.5920 joint_7 0.4080 
-skin 107 root_dup_2 0.5525 joint_7 0.4475 
-skin 108 joint_4 1.0000 
-skin 109 joint_4 1.0000 
-skin 110 root_dup_0 0.2874 root_dup_1 0.2654 joint_4 0.4472 
-skin 111 root_dup_0 0.4768 root_dup_1 0.1900 joint_4 0.3333 
-skin 112 joint_4 1.0000 
-skin 113 root_dup_0 0.6716 joint_4 0.3284 
-skin 114 root_dup_1 1.0000 
-skin 115 root_dup_2 1.0000 
-skin 116 root_dup_2 1.0000 
-skin 117 root_dup_1 0.4000 root_dup_2 0.6000 
-skin 118 root_dup_0 0.6056 root_dup_1 0.3944 
-skin 119 root_dup_0 1.0000 
-skin 120 joint_4 1.0000 
-skin 121 joint_4 1.0000 
-skin 122 root_dup_2 0.6001 joint_4 0.3999 
-skin 123 root_dup_1 0.1765 root_dup_2 0.4384 joint_4 0.3851 
-skin 124 root_dup_1 0.3491 joint_4 0.6509 
-skin 125 root_dup_2 1.0000 
-skin 126 root_dup_2 1.0000 
-skin 127 root_dup_2 0.4815 joint_4 0.3033 joint_7 0.2152 
-skin 128 joint_4 1.0000 
-skin 129 root_dup_0 0.3709 joint_4 0.6291 
-skin 130 root_dup_0 0.4090 joint_4 0.5910 
-skin 131 root_dup_0 0.3888 joint_4 0.6112 
-skin 132 root_dup_0 0.4590 joint_4 0.5410 
-skin 133 root_dup_0 0.4800 joint_4 0.5200 
-skin 134 root_dup_0 0.4846 joint_4 0.5154 
-skin 135 root_dup_0 0.4755 joint_4 0.5245 
-skin 136 root_dup_1 0.2665 root_dup_2 0.3024 joint_4 0.4311 
-skin 137 root_dup_1 0.3637 joint_4 0.6363 
-skin 138 root_dup_0 0.1901 root_dup_1 0.2852 joint_4 0.5247 
-skin 139 root_dup_0 0.3350 root_dup_1 0.1893 joint_4 0.4757 
-skin 140 root_dup_2 1.0000 
-skin 141 root_dup_2 1.0000 
-skin 142 root_dup_2 1.0000 
-skin 143 root_dup_2 1.0000 
-skin 144 root_dup_2 1.0000 
-skin 145 root_dup_2 1.0000 
-skin 146 root_dup_2 1.0000 
-skin 147 root_dup_0 1.0000 
-skin 148 root_dup_1 0.5480 joint_4 0.4520 
-skin 149 root_dup_0 0.6348 root_dup_1 0.3652 
-skin 150 root_dup_2 1.0000 
-skin 151 root_dup_1 0.2472 root_dup_2 0.5060 joint_4 0.2468 
-skin 152 joint_4 1.0000 
-skin 153 root_dup_1 1.0000 
-skin 154 root_dup_1 1.0000 
-skin 155 root_dup_2 0.5824 joint_7 0.4176 
-skin 156 root_dup_0 0.4537 joint_4 0.5463 
-skin 157 root_dup_0 0.4787 joint_4 0.5213 
-skin 158 root_dup_0 1.0000 
-skin 159 joint_4 1.0000 
-skin 160 root_dup_0 0.7259 root_dup_1 0.2741 
-skin 161 root_dup_0 0.6159 root_dup_1 0.3841 
-skin 162 root_dup_1 0.3742 root_dup_2 0.6258 
-skin 163 root_dup_0 0.3454 root_dup_1 0.3166 root_dup_2 0.3379 
-skin 164 root_dup_2 0.3864 joint_4 0.2121 joint_7 0.4015 
-skin 165 root_dup_2 0.6286 joint_4 0.3714 
-skin 166 joint_4 1.0000 
-skin 167 root_dup_2 0.6119 joint_4 0.3881 
-skin 168 root_dup_1 1.0000 
-skin 169 root_dup_2 1.0000 
-skin 170 root_dup_2 0.6793 joint_4 0.3207 
-skin 171 root_dup_0 0.4236 root_dup_1 0.5764 
-skin 172 joint_4 1.0000 
-skin 173 joint_4 0.6122 joint_6 0.3878 
-skin 174 joint_4 0.4350 joint_6 0.5650 
-skin 175 joint_4 0.6913 joint_6 0.3087 
-skin 176 joint_4 0.5133 joint_6 0.4867 
-skin 177 joint_4 0.4733 joint_6 0.5267 
-skin 178 joint_4 0.5506 joint_6 0.4494 
-skin 179 joint_4 0.5760 joint_6 0.4240 
-skin 180 joint_4 0.7214 joint_6 0.2786 
-skin 181 joint_4 0.5294 joint_6 0.4706 
-skin 182 joint_4 0.5525 joint_6 0.4475 
-skin 183 joint_4 0.5185 joint_6 0.4815 
-skin 184 joint_4 0.6044 joint_6 0.3956 
-skin 185 joint_4 0.7243 joint_6 0.2757 
-skin 186 joint_4 1.0000 
-skin 187 joint_4 0.6382 joint_6 0.3618 
-skin 188 joint_4 0.6312 joint_6 0.3688 
-skin 189 joint_4 0.3525 joint_6 0.6475 
-skin 190 joint_4 0.2949 joint_6 0.7051 
-skin 191 joint_6 1.0000 
-skin 192 joint_4 0.3592 joint_6 0.6408 
-skin 193 joint_4 0.2857 joint_6 0.7143 
-skin 194 joint_4 1.0000 
-skin 195 joint_4 1.0000 
-skin 196 joint_4 1.0000 
-skin 197 joint_4 1.0000 
-skin 198 joint_4 1.0000 
-skin 199 joint_4 1.0000 
-skin 200 joint_10 0.3938 joint_8 0.6062 
-skin 201 joint_8 1.0000 
-skin 202 joint_10 0.4975 joint_8 0.5025 
-skin 203 joint_8 1.0000 
-skin 204 joint_8 1.0000 
-skin 205 joint_8 1.0000 
-skin 206 joint_8 1.0000 
-skin 207 joint_8 1.0000 
-skin 208 joint_8 1.0000 
-skin 209 root_dup_0 1.0000 
-skin 210 root_dup_0 0.4483 root_dup_1 0.5517 
-skin 211 root_dup_0 1.0000 
-skin 212 root_dup_0 1.0000 
-skin 213 root_dup_0 1.0000 
-skin 214 root_dup_0 1.0000 
-skin 215 root_dup_0 0.5121 root_dup_1 0.2021 root_dup_2 0.2858 
-skin 216 root_dup_0 1.0000 
-skin 217 root_dup_0 0.5551 root_dup_1 0.4449 
-skin 218 joint_4 1.0000 
-skin 219 joint_4 1.0000 
-skin 220 joint_4 1.0000 
-skin 221 joint_4 1.0000 
-skin 222 joint_4 1.0000 
-skin 223 joint_4 0.5772 joint_6 0.4228 
-skin 224 joint_4 0.6359 joint_6 0.3641 
-skin 225 joint_4 0.6882 joint_6 0.3118 
-skin 226 joint_4 1.0000 
-skin 227 joint_4 0.7381 joint_6 0.2619 
-skin 228 joint_4 1.0000 
-skin 229 joint_10 0.4198 joint_8 0.5802 
-skin 230 joint_8 1.0000 
-skin 231 joint_8 1.0000 
-skin 232 joint_10 0.2844 joint_8 0.7156 
-skin 233 joint_4 1.0000 
-skin 234 joint_4 1.0000 
-skin 235 joint_4 1.0000 
-skin 236 joint_4 1.0000 
-skin 237 root_dup_0 1.0000 
-skin 238 root_dup_0 0.5809 root_dup_1 0.4191 
-skin 239 root_dup_0 0.6311 root_dup_1 0.3689 
-skin 240 root_dup_0 0.2848 root_dup_1 0.7152 
-skin 241 root_dup_1 1.0000 
-skin 242 root_dup_0 0.3652 root_dup_1 0.6348 
-skin 243 joint_10 0.4459 joint_8 0.5541 
-skin 244 joint_10 0.2625 joint_8 0.7375 
-skin 245 root_dup_0 0.3153 root_dup_1 0.6847 
-skin 246 root_dup_1 0.4004 root_dup_2 0.5996 
-skin 247 root_dup_0 0.1545 root_dup_1 0.4125 root_dup_2 0.4330 
-skin 248 root_dup_2 1.0000 
-skin 249 root_dup_2 1.0000 
-skin 250 joint_4 1.0000 
-skin 251 joint_4 1.0000 
-skin 252 joint_4 1.0000 
-skin 253 joint_4 0.2857 joint_6 0.7143 
-skin 254 joint_4 0.4638 joint_6 0.5362 
-skin 255 joint_4 0.3148 joint_6 0.6852 
-skin 256 root_dup_1 0.7224 root_dup_2 0.2776 
-skin 257 root_dup_0 0.3232 root_dup_1 0.6768 
-skin 258 root_dup_0 0.3282 root_dup_1 0.6718 
-skin 259 root_dup_0 0.3081 root_dup_1 0.6919 
-skin 260 root_dup_0 0.6200 root_dup_1 0.3800 
-skin 261 root_dup_0 0.6862 root_dup_1 0.3138 
-skin 262 joint_10 0.4602 joint_8 0.5398 
-skin 263 joint_10 0.5565 joint_8 0.4435 
-skin 264 joint_10 0.4468 joint_8 0.5532 
-skin 265 joint_4 0.6554 joint_6 0.3446 
-skin 266 joint_4 0.6429 joint_6 0.3571 
-skin 267 joint_4 0.6651 joint_6 0.3349 
-skin 268 joint_4 0.7029 joint_6 0.2971 
-skin 269 root_dup_1 1.0000 
-skin 270 root_dup_1 1.0000 
-skin 271 root_dup_0 0.5909 root_dup_1 0.4091 
-skin 272 joint_4 1.0000 
-skin 273 joint_4 1.0000 
-skin 274 joint_4 1.0000 
-skin 275 joint_4 0.7046 joint_6 0.2954 
-skin 276 joint_4 1.0000 
-skin 277 joint_4 1.0000 
-skin 278 root_dup_0 0.7107 root_dup_1 0.2893 
-skin 279 root_dup_0 0.5755 root_dup_1 0.4245 
-skin 280 root_dup_0 0.7045 root_dup_1 0.2955 
-skin 281 root_dup_1 0.5343 root_dup_2 0.4657 
-skin 282 root_dup_0 0.5276 root_dup_1 0.4724 
-skin 283 root_dup_0 0.4938 root_dup_1 0.5062 
-skin 284 root_dup_0 0.3123 root_dup_1 0.6877 
-skin 285 root_dup_1 0.3453 root_dup_2 0.6547 
-skin 286 root_dup_2 0.2813 joint_7 0.5113 joint_9 0.2073 
-skin 287 root_dup_2 0.4074 joint_7 0.5926 
-skin 288 root_dup_2 0.2074 joint_7 0.5539 joint_9 0.2387 
-skin 289 root_dup_2 0.3828 joint_7 0.6172 
-skin 290 joint_7 0.5502 joint_9 0.4498 
-skin 291 joint_7 0.4272 joint_9 0.5728 
-skin 292 joint_7 0.5544 joint_9 0.4456 
-skin 293 joint_7 0.2719 joint_9 0.7281 
-skin 294 joint_7 0.4277 joint_9 0.5723 
-skin 295 joint_9 1.0000 
-skin 296 joint_9 1.0000 
-skin 297 joint_9 0.7042 joint_10 0.2958 
-skin 298 joint_9 0.5148 joint_10 0.4852 
-skin 299 joint_10 1.0000 
-skin 300 joint_10 1.0000 
-skin 301 joint_10 0.7228 joint_8 0.2772 
-skin 302 joint_9 0.2804 joint_10 0.7196 
-skin 303 joint_10 1.0000 
-skin 304 joint_10 1.0000 
-skin 305 joint_9 0.6784 joint_10 0.3216 
-skin 306 joint_9 0.5051 joint_10 0.4949 
-skin 307 joint_9 1.0000 
-skin 308 joint_9 0.6552 joint_10 0.3448 
-skin 309 joint_9 0.4684 joint_10 0.5316 
-skin 310 joint_9 0.6501 joint_10 0.3499 
-skin 311 joint_10 1.0000 
-skin 312 joint_9 0.4889 joint_10 0.5111 
-skin 313 joint_10 1.0000 
-skin 314 joint_10 1.0000 
-skin 315 joint_10 0.6407 joint_8 0.3593 
-skin 316 joint_10 1.0000 
-skin 317 joint_10 1.0000 
-skin 318 joint_10 0.7155 joint_8 0.2845 
-skin 319 joint_9 0.2860 joint_10 0.7140 
-skin 320 joint_10 1.0000 
-skin 321 joint_8 1.0000 
-skin 322 joint_10 0.2702 joint_8 0.7298 
-skin 323 joint_10 0.3314 joint_8 0.6686 
-skin 324 joint_10 0.4193 joint_8 0.5807 
-skin 325 joint_10 0.4327 joint_8 0.5673 
-skin 326 joint_10 0.4268 joint_8 0.5732 
-skin 327 joint_10 0.5511 joint_8 0.4489 
-skin 328 joint_10 0.2674 joint_8 0.7326 
-skin 329 joint_8 1.0000 
-skin 330 joint_10 0.4580 joint_8 0.5420 
-skin 331 joint_10 0.3589 joint_8 0.6411 
-skin 332 joint_8 1.0000 
-skin 333 joint_9 0.2736 joint_10 0.7264 
-hier root root_dup_0
-hier root root_dup_1
-hier root root_dup_2
-hier root_dup_0 joint_0
-hier root_dup_1 joint_4
-hier root_dup_2 joint_7
-hier joint_0 joint_2
-hier joint_4 joint_6
-hier joint_7 joint_9
-hier joint_2 joint_3
-hier joint_9 joint_10
-hier joint_3 joint_1
-hier joint_10 joint_8
+joints Bone 0.00000000 0.08175300 0.00000000
+joints Bone.001 0.00000000 0.18536400 0.00000000
+joints Bone.001_dup_0 0.00199923 0.18736323 0.00199923
+joints Bone.001_dup_1 0.00199923 0.18736323 0.00199923
+joints Bone.001_dup_2 0.00199968 0.18736368 0.00199968
+joints Bone.002 0.00000000 0.25200500 0.00000000
+joints Bone.003 0.00000000 0.25200500 0.00000000
+joints Bone.007 -0.00003400 0.25202000 0.00000000
+joints Bone.002Site 0.00000000 0.37447700 0.00000000
+joints Bone.004 0.10246300 0.29705300 0.00000000
+joints Bone.008 -0.10249700 0.29706800 0.00000000
+joints Bone.005 0.21552500 0.29970300 0.00000000
+joints Bone.009 -0.21555900 0.29971800 0.00000000
+joints Bone.006 0.36921900 0.29970300 0.00000000
+joints Bone.010 -0.36925300 0.29971800 0.00000000
+joints Bone.006Site 0.48228100 0.30058600 0.00000000
+joints Bone.010Site -0.48231500 0.30060100 0.00000000
+root Bone
+skin 0 Bone.007 0.3460 Bone.008 0.6540 
+skin 1 Bone.007 0.4730 Bone.008 0.5270 
+skin 2 Bone.007 0.3161 Bone.008 0.6839 
+skin 3 Bone.007 0.4730 Bone.008 0.5270 
+skin 4 Bone.008 1.0000 
+skin 5 Bone.007 0.3161 Bone.008 0.6839 
+skin 6 Bone.007 0.4730 Bone.008 0.5270 
+skin 7 Bone.008 1.0000 
+skin 8 Bone.008 1.0000 
+skin 9 Bone.008 1.0000 
+skin 10 Bone.008 1.0000 
+skin 11 Bone.008 1.0000 
+skin 12 Bone.008 1.0000 
+skin 13 Bone.008 1.0000 
+skin 14 Bone.008 1.0000 
+skin 15 Bone.008 1.0000 
+skin 16 Bone.008 1.0000 
+skin 17 Bone.008 1.0000 
+skin 18 Bone.008 1.0000 
+skin 19 Bone.008 1.0000 
+skin 20 Bone.008 1.0000 
+skin 21 Bone.008 1.0000 
+skin 22 Bone.007 0.4730 Bone.008 0.5270 
+skin 23 Bone.008 1.0000 
+skin 24 Bone.008 1.0000 
+skin 25 Bone.008 1.0000 
+skin 26 Bone.007 0.4730 Bone.008 0.5270 
+skin 27 Bone.008 1.0000 
+skin 28 Bone.008 1.0000 
+skin 29 Bone.007 0.4730 Bone.008 0.5270 
+skin 30 Bone.008 1.0000 
+skin 31 Bone.008 1.0000 
+skin 32 Bone.008 1.0000 
+skin 33 Bone.008 1.0000 
+skin 34 Bone.008 0.6153 Bone.009 0.3847 
+skin 35 Bone.008 1.0000 
+skin 36 Bone.008 1.0000 
+skin 37 Bone.008 0.6583 Bone.009 0.3417 
+skin 38 Bone.008 0.6153 Bone.009 0.3847 
+skin 39 Bone.008 0.6583 Bone.009 0.3417 
+skin 40 Bone.008 0.6293 Bone.009 0.3707 
+skin 41 Bone.008 0.6153 Bone.009 0.3847 
+skin 42 Bone.008 0.6583 Bone.009 0.3417 
+skin 43 Bone.008 0.3967 Bone.009 0.6033 
+skin 44 Bone.008 0.6293 Bone.009 0.3707 
+skin 45 Bone.008 0.3967 Bone.009 0.6033 
+skin 46 Bone.009 1.0000 
+skin 47 Bone.008 0.6293 Bone.009 0.3707 
+skin 48 Bone.008 0.3967 Bone.009 0.6033 
+skin 49 Bone.009 1.0000 
+skin 50 Bone.009 1.0000 
+skin 51 Bone.009 1.0000 
+skin 52 Bone.009 0.6715 Bone.010Site 0.3285 
+skin 53 Bone.009 1.0000 
+skin 54 Bone.009 1.0000 
+skin 55 Bone.009 1.0000 
+skin 56 Bone.009 0.6715 Bone.010Site 0.3285 
+skin 57 Bone.009 1.0000 
+skin 58 Bone.009 1.0000 
+skin 59 Bone.009 0.6715 Bone.010Site 0.3285 
+skin 60 Bone.009 1.0000 
+skin 61 Bone.009 1.0000 
+skin 62 Bone.009 1.0000 
+skin 63 Bone.009 1.0000 
+skin 64 Bone.009 0.7036 Bone.010 0.2964 
+skin 65 Bone.009 1.0000 
+skin 66 Bone.009 0.6715 Bone.010Site 0.3285 
+skin 67 Bone.009 1.0000 
+skin 68 Bone.009 1.0000 
+skin 69 Bone.009 1.0000 
+skin 70 Bone.009 0.7261 Bone.010 0.2739 
+skin 71 Bone.009 1.0000 
+skin 72 Bone.009 1.0000 
+skin 73 Bone.009 1.0000 
+skin 74 Bone.009 0.7261 Bone.010 0.2739 
+skin 75 Bone.009 1.0000 
+skin 76 Bone.009 1.0000 
+skin 77 Bone.009 0.7261 Bone.010 0.2739 
+skin 78 Bone.009 1.0000 
+skin 79 Bone.009 1.0000 
+skin 80 Bone.009 1.0000 
+skin 81 Bone.009 1.0000 
+skin 82 Bone.008 1.0000 
+skin 83 Bone.009 1.0000 
+skin 84 Bone.009 1.0000 
+skin 85 Bone.008 0.3602 Bone.009 0.6398 
+skin 86 Bone.008 1.0000 
+skin 87 Bone.008 0.3602 Bone.009 0.6398 
+skin 88 Bone.009 1.0000 
+skin 89 Bone.008 1.0000 
+skin 90 Bone.008 0.3602 Bone.009 0.6398 
+skin 91 Bone.009 1.0000 
+skin 92 Bone.009 1.0000 
+skin 93 Bone.009 1.0000 
+skin 94 Bone.009 0.7394 Bone.010 0.2606 
+skin 95 Bone.009 1.0000 
+skin 96 Bone.009 1.0000 
+skin 97 Bone.009 0.6304 Bone.010 0.3696 
+skin 98 Bone.009 0.7394 Bone.010 0.2606 
+skin 99 Bone.009 0.6304 Bone.010 0.3696 
+skin 100 Bone.009 1.0000 
+skin 101 Bone.009 0.7394 Bone.010 0.2606 
+skin 102 Bone.009 0.6304 Bone.010 0.3696 
+skin 103 Bone.009 1.0000 
+skin 104 Bone.009 1.0000 
+skin 105 Bone.009 1.0000 
+skin 106 Bone.009 1.0000 
+skin 107 Bone.009 1.0000 
+skin 108 Bone.009 1.0000 
+skin 109 Bone.009 0.7390 Bone.010Site 0.2610 
+skin 110 Bone.009 1.0000 
+skin 111 Bone.009 0.7390 Bone.010Site 0.2610 
+skin 112 Bone.009 0.5778 Bone.010 0.4222 
+skin 113 Bone.009 1.0000 
+skin 114 Bone.009 0.7390 Bone.010Site 0.2610 
+skin 115 Bone.010 1.0000 
+skin 116 Bone.009 0.5778 Bone.010 0.4222 
+skin 117 Bone.010 1.0000 
+skin 118 Bone.010 0.5540 Bone.010Site 0.4460 
+skin 119 Bone.009 0.5778 Bone.010 0.4222 
+skin 120 Bone.010 1.0000 
+skin 121 Bone.010 0.6998 Bone.010Site 0.3002 
+skin 122 Bone.010 0.5540 Bone.010Site 0.4460 
+skin 123 Bone.010 0.6998 Bone.010Site 0.3002 
+skin 124 Bone.010 1.0000 
+skin 125 Bone.010 0.5540 Bone.010Site 0.4460 
+skin 126 Bone.010 0.6998 Bone.010Site 0.3002 
+skin 127 Bone.010 0.6749 Bone.010Site 0.3251 
+skin 128 Bone.010 1.0000 
+skin 129 Bone.010 0.6749 Bone.010Site 0.3251 
+skin 130 Bone.010 1.0000 
+skin 131 Bone.010 1.0000 
+skin 132 Bone.010 0.6749 Bone.010Site 0.3251 
+skin 133 Bone.010 1.0000 
+skin 134 Bone.010 1.0000 
+skin 135 Bone.010 1.0000 
+skin 136 Bone.010 1.0000 
+skin 137 Bone.010 1.0000 
+skin 138 Bone.007 0.4730 Bone.008 0.5270 
+skin 139 Bone.008 1.0000 
+skin 140 Bone.008 1.0000 
+skin 141 Bone.008 1.0000 
+skin 142 Bone.008 1.0000 
+skin 143 Bone.008 1.0000 
+skin 144 Bone.008 1.0000 
+skin 145 Bone.008 0.6153 Bone.009 0.3847 
+skin 146 Bone.008 1.0000 
+skin 147 Bone.008 0.6153 Bone.009 0.3847 
+skin 148 Bone.008 1.0000 
+skin 149 Bone.008 1.0000 
+skin 150 Bone.008 0.6153 Bone.009 0.3847 
+skin 151 Bone.008 0.6293 Bone.009 0.3707 
+skin 152 Bone.008 1.0000 
+skin 153 Bone.008 0.6293 Bone.009 0.3707 
+skin 154 Bone.008 1.0000 
+skin 155 Bone.008 1.0000 
+skin 156 Bone.008 0.6293 Bone.009 0.3707 
+skin 157 Bone.009 1.0000 
+skin 158 Bone.008 1.0000 
+skin 159 Bone.009 1.0000 
+skin 160 Bone.008 1.0000 
+skin 161 Bone.008 1.0000 
+skin 162 Bone.010 1.0000 
+skin 163 Bone.010 1.0000 
+skin 164 Bone.010 1.0000 
+skin 165 Bone.010 1.0000 
+skin 166 Bone.010 1.0000 
+skin 167 Bone.010 1.0000 
+skin 168 Bone.010 1.0000 
+skin 169 Bone.010 1.0000 
+skin 170 Bone.010 1.0000 
+skin 171 Bone.010 1.0000 
+skin 172 Bone.010 1.0000 
+skin 173 Bone.010 1.0000 
+skin 174 Bone.010 1.0000 
+skin 175 Bone.010 1.0000 
+skin 176 Bone.010 1.0000 
+skin 177 Bone.010 1.0000 
+skin 178 Bone.010 1.0000 
+skin 179 Bone.010 1.0000 
+skin 180 Bone.010 1.0000 
+skin 181 Bone.010 1.0000 
+skin 182 Bone.010 1.0000 
+skin 183 Bone.010 0.4101 Bone.010Site 0.5899 
+skin 184 Bone.010 0.3718 Bone.010Site 0.6282 
+skin 185 Bone.010 1.0000 
+skin 186 Bone.010 0.3718 Bone.010Site 0.6282 
+skin 187 Bone.010 1.0000 
+skin 188 Bone.010 1.0000 
+skin 189 Bone.010 0.3718 Bone.010Site 0.6282 
+skin 190 Bone.010 1.0000 
+skin 191 Bone.010 1.0000 
+skin 192 Bone.010 1.0000 
+skin 193 Bone.010 1.0000 
+skin 194 Bone.010 1.0000 
+skin 195 Bone.010 1.0000 
+skin 196 Bone.010 1.0000 
+skin 197 Bone.010 1.0000 
+skin 198 Bone.010 1.0000 
+skin 199 Bone.010 1.0000 
+skin 200 Bone.010 1.0000 
+skin 201 Bone.010 1.0000 
+skin 202 Bone.010 1.0000 
+skin 203 Bone.009 1.0000 
+skin 204 Bone.010 1.0000 
+skin 205 Bone.009 0.7390 Bone.010Site 0.2610 
+skin 206 Bone.009 1.0000 
+skin 207 Bone.010 1.0000 
+skin 208 Bone.010 1.0000 
+skin 209 Bone.009 0.7390 Bone.010Site 0.2610 
+skin 210 Bone.010 1.0000 
+skin 211 Bone.010 1.0000 
+skin 212 Bone.009 0.7390 Bone.010Site 0.2610 
+skin 213 Bone.010 1.0000 
+skin 214 Bone.010Site 1.0000 
+skin 215 Bone.010 1.0000 
+skin 216 Bone.010 1.0000 
+skin 217 Bone.010 1.0000 
+skin 218 Bone.010 1.0000 
+skin 219 Bone.010 1.0000 
+skin 220 Bone.010 1.0000 
+skin 221 Bone.010 1.0000 
+skin 222 Bone.010 1.0000 
+skin 223 Bone.009 0.7036 Bone.010 0.2964 
+skin 224 Bone.010 1.0000 
+skin 225 Bone.009 0.7036 Bone.010 0.2964 
+skin 226 Bone.010 1.0000 
+skin 227 Bone.010 1.0000 
+skin 228 Bone.009 0.7036 Bone.010 0.2964 
+skin 229 Bone.010 0.5540 Bone.010Site 0.4460 
+skin 230 Bone.010 1.0000 
+skin 231 Bone.010 1.0000 
+skin 232 Bone.010 1.0000 
+skin 233 Bone.010 0.4101 Bone.010Site 0.5899 
+skin 234 Bone.010 1.0000 
+skin 235 Bone.010 1.0000 
+skin 236 Bone.010 0.4101 Bone.010Site 0.5899 
+skin 237 Bone.010 1.0000 
+skin 238 Bone.010 1.0000 
+skin 239 Bone.010 1.0000 
+skin 240 Bone.010 1.0000 
+skin 241 Bone.010 1.0000 
+skin 242 Bone.010 1.0000 
+skin 243 Bone.010 1.0000 
+skin 244 Bone.010 1.0000 
+skin 245 Bone.010 1.0000 
+skin 246 Bone.009 1.0000 
+skin 247 Bone.009 1.0000 
+skin 248 Bone.009 1.0000 
+skin 249 Bone.009 1.0000 
+skin 250 Bone.008 0.3602 Bone.009 0.6398 
+skin 251 Bone.009 1.0000 
+skin 252 Bone.009 1.0000 
+skin 253 Bone.009 0.7288 Bone.010 0.2712 
+skin 254 Bone.008 0.3602 Bone.009 0.6398 
+skin 255 Bone.009 0.7288 Bone.010 0.2712 
+skin 256 Bone.009 1.0000 
+skin 257 Bone.008 0.3602 Bone.009 0.6398 
+skin 258 Bone.009 0.7288 Bone.010 0.2712 
+skin 259 Bone.010 1.0000 
+skin 260 Bone.009 1.0000 
+skin 261 Bone.010 0.6998 Bone.010Site 0.3002 
+skin 262 Bone.010 0.6844 Bone.010Site 0.3156 
+skin 263 Bone.010 0.6749 Bone.010Site 0.3251 
+skin 264 Bone.010 0.6844 Bone.010Site 0.3156 
+skin 265 Bone.010 0.6161 Bone.010Site 0.3839 
+skin 266 Bone.010 0.6749 Bone.010Site 0.3251 
+skin 267 Bone.010 0.6844 Bone.010Site 0.3156 
+skin 268 Bone.010 0.3410 Bone.010Site 0.6590 
+skin 269 Bone.010 0.6161 Bone.010Site 0.3839 
+skin 270 Bone.010 0.3410 Bone.010Site 0.6590 
+skin 271 Bone.010 1.0000 
+skin 272 Bone.010 0.6161 Bone.010Site 0.3839 
+skin 273 Bone.010 0.3410 Bone.010Site 0.6590 
+skin 274 Bone.010Site 1.0000 
+skin 275 Bone.010 1.0000 
+skin 276 Bone.010 1.0000 
+skin 277 Bone.010 1.0000 
+skin 278 Bone.010 1.0000 
+skin 279 Bone.010 1.0000 
+skin 280 Bone.010 1.0000 
+skin 281 Bone.010 1.0000 
+skin 282 Bone.010 1.0000 
+skin 283 Bone.010 1.0000 
+skin 284 Bone.010 1.0000 
+skin 285 Bone.010 1.0000 
+skin 286 Bone.010Site 1.0000 
+skin 287 Bone.010 1.0000 
+skin 288 Bone.009 1.0000 
+skin 289 Bone.009 0.5778 Bone.010 0.4222 
+skin 290 Bone.009 1.0000 
+skin 291 Bone.009 0.5778 Bone.010 0.4222 
+skin 292 Bone.009 1.0000 
+skin 293 Bone.009 1.0000 
+skin 294 Bone.009 0.5778 Bone.010 0.4222 
+skin 295 Bone.010 0.5540 Bone.010Site 0.4460 
+skin 296 Bone.009 1.0000 
+skin 297 Bone.010 0.5540 Bone.010Site 0.4460 
+skin 298 Bone.009 0.7036 Bone.010 0.2964 
+skin 299 Bone.009 1.0000 
+skin 300 Bone.009 0.6304 Bone.010 0.3696 
+skin 301 Bone.009 1.0000 
+skin 302 Bone.009 1.0000 
+skin 303 Bone.009 1.0000 
+skin 304 Bone.010 1.0000 
+skin 305 Bone.009 1.0000 
+skin 306 Bone.009 1.0000 
+skin 307 Bone.010 1.0000 
+skin 308 Bone.010 1.0000 
+skin 309 Bone.010 0.3718 Bone.010Site 0.6282 
+skin 310 Bone.009 1.0000 
+skin 311 Bone.010 1.0000 
+skin 312 Bone.009 1.0000 
+skin 313 Bone.010 1.0000 
+skin 314 Bone.010 1.0000 
+skin 315 Bone.009 1.0000 
+skin 316 Bone.010 0.4101 Bone.010Site 0.5899 
+skin 317 Bone.010 1.0000 
+skin 318 Bone.009 0.7288 Bone.010 0.2712 
+skin 319 Bone.009 1.0000 
+skin 320 Bone.010 1.0000 
+skin 321 Bone.009 1.0000 
+skin 322 Bone.010 1.0000 
+skin 323 Bone.010 1.0000 
+skin 324 Bone.009 1.0000 
+skin 325 Bone.009 0.7036 Bone.010 0.2964 
+skin 326 Bone.010 1.0000 
+skin 327 Bone.009 1.0000 
+skin 328 Bone.009 1.0000 
+skin 329 Bone.009 1.0000 
+skin 330 Bone.009 1.0000 
+skin 331 Bone.009 0.7036 Bone.010 0.2964 
+skin 332 Bone.009 1.0000 
+skin 333 Bone.009 1.0000 
+skin 334 Bone.009 1.0000 
+skin 335 Bone.009 0.7036 Bone.010 0.2964 
+skin 336 Bone.010 1.0000 
+skin 337 Bone.010 1.0000 
+skin 338 Bone.010 1.0000 
+skin 339 Bone.010 1.0000 
+skin 340 Bone.010 1.0000 
+skin 341 Bone.010 1.0000 
+skin 342 Bone.010 1.0000 
+skin 343 Bone.010 1.0000 
+skin 344 Bone.010 1.0000 
+skin 345 Bone.010 1.0000 
+skin 346 Bone.010Site 1.0000 
+skin 347 Bone.010 1.0000 
+skin 348 Bone.007 0.4730 Bone.008 0.5270 
+skin 349 Bone.007 0.3460 Bone.008 0.6540 
+skin 350 Bone.008 1.0000 
+skin 351 Bone.007 0.3460 Bone.008 0.6540 
+skin 352 Bone.008 1.0000 
+skin 353 Bone.008 1.0000 
+skin 354 Bone.009 1.0000 
+skin 355 Bone.009 0.7261 Bone.010 0.2739 
+skin 356 Bone.008 0.6293 Bone.009 0.3707 
+skin 357 Bone.009 0.7261 Bone.010 0.2739 
+skin 358 Bone.009 1.0000 
+skin 359 Bone.008 0.6293 Bone.009 0.3707 
+skin 360 Bone.009 1.0000 
+skin 361 Bone.008 0.3967 Bone.009 0.6033 
+skin 362 Bone.009 0.7394 Bone.010 0.2606 
+skin 363 Bone.008 0.3967 Bone.009 0.6033 
+skin 364 Bone.008 0.6583 Bone.009 0.3417 
+skin 365 Bone.009 0.7394 Bone.010 0.2606 
+skin 366 Bone.008 1.0000 
+skin 367 Bone.009 1.0000 
+skin 368 Bone.008 0.6583 Bone.009 0.3417 
+skin 369 Bone.009 1.0000 
+skin 370 Bone.009 0.7394 Bone.010 0.2606 
+skin 371 Bone.008 0.6583 Bone.009 0.3417 
+skin 372 Bone.010 0.6998 Bone.010Site 0.3002 
+skin 373 Bone.010 1.0000 
+skin 374 Bone.010 0.6844 Bone.010Site 0.3156 
+skin 375 Bone.010 1.0000 
+skin 376 Bone.010Site 1.0000 
+skin 377 Bone.010 0.6844 Bone.010Site 0.3156 
+skin 378 Bone.010 0.6749 Bone.010Site 0.3251 
+skin 379 Bone.010 0.6161 Bone.010Site 0.3839 
+skin 380 Bone.010 1.0000 
+skin 381 Bone.010 0.6161 Bone.010Site 0.3839 
+skin 382 Bone.010 1.0000 
+skin 383 Bone.010 1.0000 
+skin 384 Bone.010 1.0000 
+skin 385 Bone.010 0.3718 Bone.010Site 0.6282 
+skin 386 Bone.010 1.0000 
+skin 387 Bone.010 1.0000 
+skin 388 Bone.010 1.0000 
+skin 389 Bone.010 1.0000 
+skin 390 Bone.009 1.0000 
+skin 391 Bone.009 1.0000 
+skin 392 Bone.009 1.0000 
+skin 393 Bone.010 0.3718 Bone.010Site 0.6282 
+skin 394 Bone.010 0.4101 Bone.010Site 0.5899 
+skin 395 Bone.009 1.0000 
+skin 396 Bone.009 1.0000 
+skin 397 Bone.009 1.0000 
+skin 398 Bone.009 1.0000 
+skin 399 Bone.010 0.6844 Bone.010Site 0.3156 
+skin 400 Bone.010Site 1.0000 
+skin 401 Bone.010 0.3410 Bone.010Site 0.6590 
+skin 402 Bone.001_dup_0 0.4277 Bone.003 0.5723 
+skin 403 Bone.001_dup_0 0.2734 Bone.003 0.7266 
+skin 404 Bone.003 1.0000 
+skin 405 Bone.001_dup_0 0.2734 Bone.003 0.7266 
+skin 406 Bone.001_dup_0 0.5458 Bone.003 0.4542 
+skin 407 Bone.003 1.0000 
+skin 408 Bone.001_dup_0 0.2734 Bone.003 0.7266 
+skin 409 Bone.001_dup_0 0.4280 Bone.003 0.5720 
+skin 410 Bone.001_dup_0 0.5458 Bone.003 0.4542 
+skin 411 Bone.001_dup_0 0.4280 Bone.003 0.5720 
+skin 412 Bone.001_dup_0 0.4132 Bone.001_dup_0 0.3740 Bone.003 0.2127 
+skin 413 Bone.001_dup_0 0.5458 Bone.003 0.4542 
+skin 414 Bone.001_dup_0 0.4280 Bone.003 0.5720 
+skin 415 Bone.001_dup_0 0.5112 Bone.001_dup_0 0.4888 
+skin 416 Bone.001_dup_0 0.4132 Bone.001_dup_0 0.3740 Bone.003 0.2127 
+skin 417 Bone.001_dup_0 0.5112 Bone.001_dup_0 0.4888 
+skin 418 Bone.001_dup_0 1.0000 
+skin 419 Bone.001_dup_0 0.4132 Bone.001_dup_0 0.3740 Bone.003 0.2127 
+skin 420 Bone.001_dup_0 0.5112 Bone.001_dup_0 0.4888 
+skin 421 Bone.001_dup_0 1.0000 
+skin 422 Bone.001_dup_0 1.0000 
+skin 423 Bone.001_dup_0 1.0000 
+skin 424 Bone.001_dup_0 0.4994 Bone.001_dup_0 0.5006 
+skin 425 Bone.001_dup_0 1.0000 
+skin 426 Bone.001_dup_0 1.0000 
+skin 427 Bone.001_dup_0 1.0000 
+skin 428 Bone.001_dup_0 0.4994 Bone.001_dup_0 0.5006 
+skin 429 Bone.001_dup_0 1.0000 
+skin 430 Bone.001_dup_0 1.0000 
+skin 431 Bone.001_dup_0 0.4994 Bone.001_dup_0 0.5006 
+skin 432 Bone.001_dup_0 1.0000 
+skin 433 Bone.007 1.0000 
+skin 434 Bone.001_dup_0 1.0000 
+skin 435 Bone.007 1.0000 
+skin 436 Bone.007 1.0000 
+skin 437 Bone.001_dup_0 1.0000 
+skin 438 Bone.002 0.3728 Bone.002Site 0.1985 Bone.008 0.4287 
+skin 439 Bone.002 0.5009 Bone.008 0.4991 
+skin 440 Bone.007 0.3161 Bone.008 0.6839 
+skin 441 Bone.002 0.5009 Bone.008 0.4991 
+skin 442 Bone.007 0.3460 Bone.008 0.6540 
+skin 443 Bone.007 0.3161 Bone.008 0.6839 
+skin 444 Bone.002 0.5009 Bone.008 0.4991 
+skin 445 Bone.002 0.3353 Bone.002Site 0.1460 Bone.007 0.2617 Bone.008 0.2569 
+skin 446 Bone.007 0.3460 Bone.008 0.6540 
+skin 447 Bone.002 0.3353 Bone.002Site 0.1460 Bone.007 0.2617 Bone.008 0.2569 
+skin 448 Bone.007 0.5827 Bone.008 0.4173 
+skin 449 Bone.007 0.3460 Bone.008 0.6540 
+skin 450 Bone.002 0.3353 Bone.002Site 0.1460 Bone.007 0.2617 Bone.008 0.2569 
+skin 451 Bone.001_dup_0 1.0000 
+skin 452 Bone.007 0.5827 Bone.008 0.4173 
+skin 453 Bone.001_dup_0 1.0000 
+skin 454 Bone.001_dup_0 0.7160 Bone.007 0.2840 
+skin 455 Bone.007 0.5827 Bone.008 0.4173 
+skin 456 Bone.001_dup_0 1.0000 
+skin 457 Bone.001_dup_0 1.0000 
+skin 458 Bone.001_dup_0 0.7160 Bone.007 0.2840 
+skin 459 Bone.001_dup_0 1.0000 
+skin 460 Bone.001_dup_0 0.6268 Bone.007 0.3732 
+skin 461 Bone.001_dup_0 0.7160 Bone.007 0.2840 
+skin 462 Bone.001_dup_0 1.0000 
+skin 463 Bone.001_dup_0 0.4398 Bone.001_dup_0 0.2460 Bone.007 0.3141 
+skin 464 Bone.001_dup_0 0.6268 Bone.007 0.3732 
+skin 465 Bone.001_dup_0 0.4398 Bone.001_dup_0 0.2460 Bone.007 0.3141 
+skin 466 Bone.001_dup_0 1.0000 
+skin 467 Bone.001_dup_0 0.6268 Bone.007 0.3732 
+skin 468 Bone.001_dup_0 0.4398 Bone.001_dup_0 0.2460 Bone.007 0.3141 
+skin 469 Bone.001_dup_0 0.6694 Bone.003 0.3306 
+skin 470 Bone.001_dup_0 1.0000 
+skin 471 Bone.001_dup_0 0.5458 Bone.003 0.4542 
+skin 472 Bone.001_dup_0 0.4132 Bone.001_dup_0 0.3740 Bone.003 0.2127 
+skin 473 Bone.003 1.0000 
+skin 474 Bone.001_dup_0 0.4132 Bone.001_dup_0 0.3740 Bone.003 0.2127 
+skin 475 Bone.001_dup_0 1.0000 
+skin 476 Bone.003 1.0000 
+skin 477 Bone.001_dup_0 0.4132 Bone.001_dup_0 0.3740 Bone.003 0.2127 
+skin 478 Bone.001_dup_0 1.0000 
+skin 479 Bone.001_dup_0 1.0000 
+skin 480 Bone.001_dup_0 1.0000 
+skin 481 Bone.001_dup_0 1.0000 
+skin 482 Bone.001_dup_0 1.0000 
+skin 483 Bone.001_dup_0 1.0000 
+skin 484 Bone.001_dup_0 0.4994 Bone.001_dup_0 0.5006 
+skin 485 Bone.001_dup_0 1.0000 
+skin 486 Bone.001_dup_0 0.4994 Bone.001_dup_0 0.5006 
+skin 487 Bone 0.2512 Bone.001_dup_0 0.3106 Bone.001_dup_0 0.4382 
+skin 488 Bone.001_dup_0 1.0000 
+skin 489 Bone.001_dup_0 0.4994 Bone.001_dup_0 0.5006 
+skin 490 Bone 0.1983 Bone.001_dup_0 0.3582 Bone.001_dup_0 0.4435 
+skin 491 Bone 0.2512 Bone.001_dup_0 0.3106 Bone.001_dup_0 0.4382 
+skin 492 Bone 0.1983 Bone.001_dup_0 0.3582 Bone.001_dup_0 0.4435 
+skin 493 Bone 0.5482 Bone.001_dup_0 0.4518 
+skin 494 Bone 0.2512 Bone.001_dup_0 0.3106 Bone.001_dup_0 0.4382 
+skin 495 Bone 0.1983 Bone.001_dup_0 0.3582 Bone.001_dup_0 0.4435 
+skin 496 Bone 0.7265 Bone.001_dup_0 0.2735 
+skin 497 Bone 0.5482 Bone.001_dup_0 0.4518 
+skin 498 Bone 0.5598 Bone.001_dup_0 0.4402 
+skin 499 Bone 0.4750 Bone.001_dup_0 0.2560 Bone.001_dup_0 0.2690 
+skin 500 Bone.001_dup_0 1.0000 
+skin 501 Bone 0.4750 Bone.001_dup_0 0.2560 Bone.001_dup_0 0.2690 
+skin 502 Bone.001_dup_0 1.0000 
+skin 503 Bone.001_dup_0 1.0000 
+skin 504 Bone 0.4750 Bone.001_dup_0 0.2560 Bone.001_dup_0 0.2690 
+skin 505 Bone 0.3667 Bone.001_dup_0 0.6333 
+skin 506 Bone.001_dup_0 1.0000 
+skin 507 Bone 0.3667 Bone.001_dup_0 0.6333 
+skin 508 Bone 0.4486 Bone.001_dup_0 0.3861 Bone.001_dup_0 0.1653 
+skin 509 Bone.001_dup_0 1.0000 
+skin 510 Bone 0.3667 Bone.001_dup_0 0.6333 
+skin 511 Bone 0.3493 Bone.003 0.6507 
+skin 512 Bone 0.4486 Bone.001_dup_0 0.3861 Bone.001_dup_0 0.1653 
+skin 513 Bone 0.3493 Bone.003 0.6507 
+skin 514 Bone.003 0.5872 Bone.004 0.4128 
+skin 515 Bone 0.4486 Bone.001_dup_0 0.3861 Bone.001_dup_0 0.1653 
+skin 516 Bone 0.3493 Bone.003 0.6507 
+skin 517 Bone.004 1.0000 
+skin 518 Bone.003 0.5872 Bone.004 0.4128 
+skin 519 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 520 Bone.002 0.4608 Bone.007 0.5392 
+skin 521 Bone.002 0.6030 Bone.002Site 0.3970 
+skin 522 Bone.002 0.4608 Bone.007 0.5392 
+skin 523 Bone.002 0.2131 Bone.002Site 0.2979 Bone.007 0.4890 
+skin 524 Bone.002 0.6030 Bone.002Site 0.3970 
+skin 525 Bone.002 0.4608 Bone.007 0.5392 
+skin 526 Bone.002 0.2202 Bone.002Site 0.3256 Bone.007 0.4542 
+skin 527 Bone.002 0.2131 Bone.002Site 0.2979 Bone.007 0.4890 
+skin 528 Bone.002 0.2202 Bone.002Site 0.3256 Bone.007 0.4542 
+skin 529 Bone.002 0.6231 Bone.002Site 0.3769 
+skin 530 Bone.002 0.2131 Bone.002Site 0.2979 Bone.007 0.4890 
+skin 531 Bone.002 0.2202 Bone.002Site 0.3256 Bone.007 0.4542 
+skin 532 Bone.002 0.3728 Bone.002Site 0.1985 Bone.008 0.4287 
+skin 533 Bone.002 0.6231 Bone.002Site 0.3769 
+skin 534 Bone.002 0.3728 Bone.002Site 0.1985 Bone.008 0.4287 
+skin 535 Bone.007 0.3161 Bone.008 0.6839 
+skin 536 Bone.002 0.6231 Bone.002Site 0.3769 
+skin 537 Bone 0.5598 Bone.001_dup_0 0.4402 
+skin 538 Bone.001_dup_0 0.6179 Bone.001_dup_0 0.3821 
+skin 539 Bone 0.4750 Bone.001_dup_0 0.2560 Bone.001_dup_0 0.2690 
+skin 540 Bone.001_dup_0 0.6179 Bone.001_dup_0 0.3821 
+skin 541 Bone 0.3667 Bone.001_dup_0 0.6333 
+skin 542 Bone 0.4750 Bone.001_dup_0 0.2560 Bone.001_dup_0 0.2690 
+skin 543 Bone.001_dup_0 0.6179 Bone.001_dup_0 0.3821 
+skin 544 Bone 0.2986 Bone.001_dup_0 0.4364 Bone.003 0.2650 
+skin 545 Bone 0.3667 Bone.001_dup_0 0.6333 
+skin 546 Bone 0.2986 Bone.001_dup_0 0.4364 Bone.003 0.2650 
+skin 547 Bone 0.3493 Bone.003 0.6507 
+skin 548 Bone 0.3667 Bone.001_dup_0 0.6333 
+skin 549 Bone 0.2986 Bone.001_dup_0 0.4364 Bone.003 0.2650 
+skin 550 Bone.001_dup_0 0.4520 Bone.004 0.5480 
+skin 551 Bone 0.3493 Bone.003 0.6507 
+skin 552 Bone.001_dup_0 0.4520 Bone.004 0.5480 
+skin 553 Bone.004 1.0000 
+skin 554 Bone 0.3493 Bone.003 0.6507 
+skin 555 Bone.001_dup_0 0.5112 Bone.001_dup_0 0.4888 
+skin 556 Bone.001_dup_0 0.4280 Bone.003 0.5720 
+skin 557 Bone.001_dup_0 1.0000 
+skin 558 Bone.001_dup_0 0.4280 Bone.003 0.5720 
+skin 559 Bone.001_dup_0 0.5289 Bone.003 0.4711 
+skin 560 Bone.001_dup_0 1.0000 
+skin 561 Bone.001_dup_0 0.4280 Bone.003 0.5720 
+skin 562 Bone.001_dup_0 1.0000 
+skin 563 Bone.001_dup_0 0.5289 Bone.003 0.4711 
+skin 564 Bone.001_dup_0 1.0000 
+skin 565 Bone.001_dup_0 1.0000 
+skin 566 Bone.001_dup_0 0.5289 Bone.003 0.4711 
+skin 567 Bone.001_dup_0 1.0000 
+skin 568 Bone.007 1.0000 
+skin 569 Bone.001_dup_0 1.0000 
+skin 570 Bone.002 0.4920 Bone.003 0.5080 
+skin 571 Bone.002 0.5055 Bone.003 0.4945 
+skin 572 Bone.002 1.0000 
+skin 573 Bone.002 0.5055 Bone.003 0.4945 
+skin 574 Bone.002 0.4664 Bone.003 0.5336 
+skin 575 Bone.002 1.0000 
+skin 576 Bone.002 0.5055 Bone.003 0.4945 
+skin 577 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 578 Bone.002 0.4664 Bone.003 0.5336 
+skin 579 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 580 Bone.002 0.2879 Bone.002Site 0.2870 Bone.003 0.4251 
+skin 581 Bone.002 0.4664 Bone.003 0.5336 
+skin 582 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 583 Bone.002 0.6030 Bone.002Site 0.3970 
+skin 584 Bone.002 0.2879 Bone.002Site 0.2870 Bone.003 0.4251 
+skin 585 Bone 0.4486 Bone.001_dup_0 0.3861 Bone.001_dup_0 0.1653 
+skin 586 Bone.002 0.3082 Bone.003 0.6918 
+skin 587 Bone.002 0.2879 Bone.003 0.7121 
+skin 588 Bone.002 0.3082 Bone.003 0.6918 
+skin 589 Bone.002 1.0000 
+skin 590 Bone.002 0.2879 Bone.003 0.7121 
+skin 591 Bone.002 0.3082 Bone.003 0.6918 
+skin 592 Bone.003 1.0000 
+skin 593 Bone.002 1.0000 
+skin 594 Bone.003 1.0000 
+skin 595 Bone.002 0.4920 Bone.003 0.5080 
+skin 596 Bone.002 1.0000 
+skin 597 Bone.003 1.0000 
+skin 598 Bone.002 0.5062 Bone.003 0.4938 
+skin 599 Bone.002 0.4920 Bone.003 0.5080 
+skin 600 Bone.007 1.0000 
+skin 601 Bone.007 1.0000 
+skin 602 Bone.007 1.0000 
+skin 603 Bone.007 1.0000 
+skin 604 Bone.007 1.0000 
+skin 605 Bone.007 1.0000 
+skin 606 Bone.007 1.0000 
+skin 607 Bone.007 1.0000 
+skin 608 Bone.007 1.0000 
+skin 609 Bone.007 1.0000 
+skin 610 Bone.007 1.0000 
+skin 611 Bone.007 1.0000 
+skin 612 Bone.007 1.0000 
+skin 613 Bone.007 1.0000 
+skin 614 Bone.007 1.0000 
+skin 615 Bone.002 0.3352 Bone.002Site 0.1798 Bone.007 0.4850 
+skin 616 Bone.002 0.2879 Bone.002Site 0.2870 Bone.003 0.4251 
+skin 617 Bone.002 0.3281 Bone.002Site 0.1759 Bone.003 0.4961 
+skin 618 Bone.002 0.2879 Bone.002Site 0.2870 Bone.003 0.4251 
+skin 619 Bone.002 0.4355 Bone.007 0.5645 
+skin 620 Bone.002 0.3281 Bone.002Site 0.1759 Bone.003 0.4961 
+skin 621 Bone.002 0.2879 Bone.002Site 0.2870 Bone.003 0.4251 
+skin 622 Bone.002 0.6030 Bone.002Site 0.3970 
+skin 623 Bone.002 0.4355 Bone.007 0.5645 
+skin 624 Bone.002 0.6030 Bone.002Site 0.3970 
+skin 625 Bone.007 1.0000 
+skin 626 Bone.002 0.4355 Bone.007 0.5645 
+skin 627 Bone.002 0.6030 Bone.002Site 0.3970 
+skin 628 Bone.007 1.0000 
+skin 629 Bone.007 1.0000 
+skin 630 Bone.003 1.0000 
+skin 631 Bone.002 0.3121 Bone.003 0.6879 
+skin 632 Bone.002 0.3429 Bone.003 0.6571 
+skin 633 Bone.002 0.3121 Bone.003 0.6879 
+skin 634 Bone.003 1.0000 
+skin 635 Bone.003 1.0000 
+skin 636 Bone.002 0.3121 Bone.003 0.6879 
+skin 637 Bone.003 1.0000 
+skin 638 Bone.003 1.0000 
+skin 639 Bone.003 1.0000 
+skin 640 Bone.003 1.0000 
+skin 641 Bone.003 1.0000 
+skin 642 Bone.003 1.0000 
+skin 643 Bone.003 1.0000 
+skin 644 Bone.003 1.0000 
+skin 645 Bone.001_dup_0 0.4994 Bone.001_dup_0 0.5006 
+skin 646 Bone.001_dup_0 1.0000 
+skin 647 Bone 0.1983 Bone.001_dup_0 0.3582 Bone.001_dup_0 0.4435 
+skin 648 Bone.001_dup_0 1.0000 
+skin 649 Bone 0.4567 Bone.007 0.5433 
+skin 650 Bone 0.1983 Bone.001_dup_0 0.3582 Bone.001_dup_0 0.4435 
+skin 651 Bone.001_dup_0 1.0000 
+skin 652 Bone.008 1.0000 
+skin 653 Bone 0.4567 Bone.007 0.5433 
+skin 654 Bone.008 1.0000 
+skin 655 Bone.008 1.0000 
+skin 656 Bone 0.4567 Bone.007 0.5433 
+skin 657 Bone.007 1.0000 
+skin 658 Bone.007 1.0000 
+skin 659 Bone.007 1.0000 
+skin 660 Bone.007 1.0000 
+skin 661 Bone.002 0.5083 Bone.007 0.4917 
+skin 662 Bone.007 1.0000 
+skin 663 Bone.007 1.0000 
+skin 664 Bone.007 1.0000 
+skin 665 Bone.002 0.5083 Bone.007 0.4917 
+skin 666 Bone.007 1.0000 
+skin 667 Bone.001_dup_0 1.0000 
+skin 668 Bone.002 0.5083 Bone.007 0.4917 
+skin 669 Bone.001_dup_0 0.6694 Bone.003 0.3306 
+skin 670 Bone.001_dup_0 0.4398 Bone.001_dup_0 0.2460 Bone.007 0.3141 
+skin 671 Bone.001_dup_0 0.4425 Bone.003 0.5575 
+skin 672 Bone.001_dup_0 0.4398 Bone.001_dup_0 0.2460 Bone.007 0.3141 
+skin 673 Bone.001_dup_0 0.6939 Bone.003 0.3061 
+skin 674 Bone.001_dup_0 0.4425 Bone.003 0.5575 
+skin 675 Bone.001_dup_0 0.4398 Bone.001_dup_0 0.2460 Bone.007 0.3141 
+skin 676 Bone.001_dup_0 1.0000 
+skin 677 Bone.001_dup_0 0.6939 Bone.003 0.3061 
+skin 678 Bone.001_dup_0 1.0000 
+skin 679 Bone.003 0.5090 Bone.007 0.4910 
+skin 680 Bone.001_dup_0 0.6939 Bone.003 0.3061 
+skin 681 Bone 0.5482 Bone.001_dup_0 0.4518 
+skin 682 Bone.001_dup_0 1.0000 
+skin 683 Bone 0.2512 Bone.001_dup_0 0.3106 Bone.001_dup_0 0.4382 
+skin 684 Bone.001_dup_0 1.0000 
+skin 685 Bone.001_dup_0 1.0000 
+skin 686 Bone 0.2512 Bone.001_dup_0 0.3106 Bone.001_dup_0 0.4382 
+skin 687 Bone.001_dup_0 1.0000 
+skin 688 Bone 0.3677 Bone.001_dup_0 0.6323 
+skin 689 Bone.001_dup_0 1.0000 
+skin 690 Bone 0.3677 Bone.001_dup_0 0.6323 
+skin 691 Bone 0.5598 Bone.001_dup_0 0.4402 
+skin 692 Bone.001_dup_0 1.0000 
+skin 693 Bone.004 1.0000 
+skin 694 Bone 0.3493 Bone.003 0.6507 
+skin 695 Bone.004 1.0000 
+skin 696 Bone 0.3493 Bone.003 0.6507 
+skin 697 Bone.001_dup_0 0.4425 Bone.003 0.5575 
+skin 698 Bone.004 1.0000 
+skin 699 Bone 0.3493 Bone.003 0.6507 
+skin 700 Bone.004 1.0000 
+skin 701 Bone.001_dup_0 0.4425 Bone.003 0.5575 
+skin 702 Bone.004 1.0000 
+skin 703 Bone.001_dup_0 0.6694 Bone.003 0.3306 
+skin 704 Bone.001_dup_0 0.4425 Bone.003 0.5575 
+skin 705 Bone.007 1.0000 
+skin 706 Bone.007 1.0000 
+skin 707 Bone.007 1.0000 
+skin 708 Bone.007 1.0000 
+skin 709 Bone.007 1.0000 
+skin 710 Bone.007 1.0000 
+skin 711 Bone.007 1.0000 
+skin 712 Bone.007 1.0000 
+skin 713 Bone.007 1.0000 
+skin 714 Bone.007 1.0000 
+skin 715 Bone.007 1.0000 
+skin 716 Bone.007 1.0000 
+skin 717 Bone.002 0.6030 Bone.002Site 0.3970 
+skin 718 Bone.002 0.2131 Bone.002Site 0.2979 Bone.007 0.4890 
+skin 719 Bone.007 1.0000 
+skin 720 Bone.002 0.2131 Bone.002Site 0.2979 Bone.007 0.4890 
+skin 721 Bone.007 1.0000 
+skin 722 Bone.007 1.0000 
+skin 723 Bone.002 0.2131 Bone.002Site 0.2979 Bone.007 0.4890 
+skin 724 Bone.002 0.6231 Bone.002Site 0.3769 
+skin 725 Bone.007 1.0000 
+skin 726 Bone.002 0.6231 Bone.002Site 0.3769 
+skin 727 Bone.001_dup_0 1.0000 
+skin 728 Bone.007 1.0000 
+skin 729 Bone.002 0.5009 Bone.008 0.4991 
+skin 730 Bone.001_dup_0 0.1606 Bone.002 0.3818 Bone.002Site 0.1450 Bone.007 0.3127 
+skin 731 Bone.002 0.3353 Bone.002Site 0.1460 Bone.007 0.2617 Bone.008 0.2569 
+skin 732 Bone.001_dup_0 0.1606 Bone.002 0.3818 Bone.002Site 0.1450 Bone.007 0.3127 
+skin 733 Bone.001_dup_0 1.0000 
+skin 734 Bone.002 0.3353 Bone.002Site 0.1460 Bone.007 0.2617 Bone.008 0.2569 
+skin 735 Bone.001_dup_0 0.1606 Bone.002 0.3818 Bone.002Site 0.1450 Bone.007 0.3127 
+skin 736 Bone.001_dup_0 1.0000 
+skin 737 Bone.001_dup_0 1.0000 
+skin 738 Bone 0.1983 Bone.001_dup_0 0.3582 Bone.001_dup_0 0.4435 
+skin 739 Bone 0.4567 Bone.007 0.5433 
+skin 740 Bone 0.7265 Bone.001_dup_0 0.2735 
+skin 741 Bone 0.4567 Bone.007 0.5433 
+skin 742 Bone.001_dup_0 0.4588 Bone.008 0.5412 
+skin 743 Bone 0.7265 Bone.001_dup_0 0.2735 
+skin 744 Bone 0.4567 Bone.007 0.5433 
+skin 745 Bone.008 1.0000 
+skin 746 Bone.001_dup_0 0.4588 Bone.008 0.5412 
+skin 747 Bone.002 0.2879 Bone.003 0.7121 
+skin 748 Bone.003 1.0000 
+skin 749 Bone.001_dup_0 0.4277 Bone.003 0.5723 
+skin 750 Bone.003 1.0000 
+skin 751 Bone.001_dup_0 0.2734 Bone.003 0.7266 
+skin 752 Bone.001_dup_0 0.4277 Bone.003 0.5723 
+skin 753 Bone.003 1.0000 
+skin 754 Bone.004 1.0000 
+skin 755 Bone.001_dup_0 0.2734 Bone.003 0.7266 
+skin 756 Bone.008 1.0000 
+skin 757 Bone 0.4567 Bone.007 0.5433 
+skin 758 Bone.007 0.5827 Bone.008 0.4173 
+skin 759 Bone 0.4567 Bone.007 0.5433 
+skin 760 Bone.007 0.3460 Bone.008 0.6540 
+skin 761 Bone.007 0.5827 Bone.008 0.4173 
+skin 762 Bone 0.4567 Bone.007 0.5433 
+skin 763 Bone.008 1.0000 
+skin 764 Bone.007 0.3460 Bone.008 0.6540 
+skin 765 Bone.001_dup_0 1.0000 
+skin 766 Bone 0.4486 Bone.001_dup_0 0.3861 Bone.001_dup_0 0.1653 
+skin 767 Bone.003 1.0000 
+skin 768 Bone 0.4486 Bone.001_dup_0 0.3861 Bone.001_dup_0 0.1653 
+skin 769 Bone.001_dup_0 0.4277 Bone.003 0.5723 
+skin 770 Bone.003 1.0000 
+skin 771 Bone 0.4486 Bone.001_dup_0 0.3861 Bone.001_dup_0 0.1653 
+skin 772 Bone.002 0.2879 Bone.003 0.7121 
+skin 773 Bone.001_dup_0 0.4277 Bone.003 0.5723 
+skin 774 Bone.002 0.5062 Bone.003 0.4938 
+skin 775 Bone.003 1.0000 
+skin 776 Bone.002 0.4673 Bone.003 0.5327 
+skin 777 Bone.003 1.0000 
+skin 778 Bone.003 0.5872 Bone.004 0.4128 
+skin 779 Bone.002 0.4673 Bone.003 0.5327 
+skin 780 Bone.003 1.0000 
+skin 781 Bone 0.4486 Bone.001_dup_0 0.3861 Bone.001_dup_0 0.1653 
+skin 782 Bone.003 0.5872 Bone.004 0.4128 
+skin 783 Bone.004 1.0000 
+skin 784 Bone.001_dup_0 0.1146 Bone.002 0.3267 Bone.002Site 0.1632 Bone.003 0.2460 Bone.004 0.1495 
+skin 785 Bone.001_dup_0 0.3206 Bone.003 0.4838 Bone.004 0.1956 
+skin 786 Bone.001_dup_0 0.1146 Bone.002 0.3267 Bone.002Site 0.1632 Bone.003 0.2460 Bone.004 0.1495 
+skin 787 Bone.003 0.5090 Bone.007 0.4910 
+skin 788 Bone.001_dup_0 0.3206 Bone.003 0.4838 Bone.004 0.1956 
+skin 789 Bone.001_dup_0 0.1146 Bone.002 0.3267 Bone.002Site 0.1632 Bone.003 0.2460 Bone.004 0.1495 
+skin 790 Bone.001_dup_0 0.6939 Bone.003 0.3061 
+skin 791 Bone.003 0.5090 Bone.007 0.4910 
+skin 792 Bone.002 0.3281 Bone.002Site 0.1759 Bone.003 0.4961 
+skin 793 Bone.007 1.0000 
+skin 794 Bone.002 0.3352 Bone.002Site 0.1798 Bone.007 0.4850 
+skin 795 Bone.007 1.0000 
+skin 796 Bone.002 0.5002 Bone.003 0.4998 
+skin 797 Bone.002 0.3352 Bone.002Site 0.1798 Bone.007 0.4850 
+skin 798 Bone.007 1.0000 
+skin 799 Bone.002 0.2879 Bone.003 0.7121 
+skin 800 Bone.002 0.5002 Bone.003 0.4998 
+skin 801 Bone.007 1.0000 
+skin 802 Bone.002 0.5083 Bone.007 0.4917 
+skin 803 Bone.002 0.5115 Bone.008 0.4885 
+skin 804 Bone.002 0.5083 Bone.007 0.4917 
+skin 805 Bone.004 1.0000 
+skin 806 Bone.002 0.5115 Bone.008 0.4885 
+skin 807 Bone.002 0.5083 Bone.007 0.4917 
+skin 808 Bone.001_dup_0 1.0000 
+skin 809 Bone.004 1.0000 
+skin 810 Bone.003 1.0000 
+skin 811 Bone.003 1.0000 
+skin 812 Bone.003 1.0000 
+skin 813 Bone.003 1.0000 
+skin 814 Bone.003 0.4767 Bone.007 0.5233 
+skin 815 Bone.003 1.0000 
+skin 816 Bone.003 1.0000 
+skin 817 Bone.003 1.0000 
+skin 818 Bone.003 0.4767 Bone.007 0.5233 
+skin 819 Bone.002 0.3281 Bone.002Site 0.1759 Bone.003 0.4961 
+skin 820 Bone.002 0.4355 Bone.007 0.5645 
+skin 821 Bone.007 1.0000 
+skin 822 Bone.002 0.4355 Bone.007 0.5645 
+skin 823 Bone.007 1.0000 
+skin 824 Bone.007 1.0000 
+skin 825 Bone.001_dup_0 0.6268 Bone.007 0.3732 
+skin 826 Bone.001_dup_0 1.0000 
+skin 827 Bone.001_dup_0 0.7160 Bone.007 0.2840 
+skin 828 Bone.001_dup_0 1.0000 
+skin 829 Bone.001_dup_0 0.4483 Bone.001_dup_0 0.5517 
+skin 830 Bone.001_dup_0 0.7160 Bone.007 0.2840 
+skin 831 Bone.001_dup_0 0.1606 Bone.002 0.3818 Bone.002Site 0.1450 Bone.007 0.3127 
+skin 832 Bone.002 0.4638 Bone.007 0.5362 
+skin 833 Bone.001_dup_0 1.0000 
+skin 834 Bone.002 0.4638 Bone.007 0.5362 
+skin 835 Bone.003 0.5090 Bone.007 0.4910 
+skin 836 Bone.001_dup_0 1.0000 
+skin 837 Bone.002 0.5062 Bone.003 0.4938 
+skin 838 Bone.002 0.4673 Bone.003 0.5327 
+skin 839 Bone.001_dup_0 0.3206 Bone.003 0.4838 Bone.004 0.1956 
+skin 840 Bone.002 0.4673 Bone.003 0.5327 
+skin 841 Bone.004 1.0000 
+skin 842 Bone.001_dup_0 0.3206 Bone.003 0.4838 Bone.004 0.1956 
+skin 843 Bone.007 0.3161 Bone.008 0.6839 
+skin 844 Bone.008 1.0000 
+skin 845 Bone.002 0.6231 Bone.002Site 0.3769 
+skin 846 Bone.008 1.0000 
+skin 847 Bone.001_dup_0 1.0000 
+skin 848 Bone.002 0.6231 Bone.002Site 0.3769 
+skin 849 Bone.002 1.0000 
+skin 850 Bone.002 0.4664 Bone.003 0.5336 
+skin 851 Bone.002 0.2879 Bone.003 0.7121 
+skin 852 Bone.002 0.4664 Bone.003 0.5336 
+skin 853 Bone.002 0.5002 Bone.003 0.4998 
+skin 854 Bone.002 0.2879 Bone.003 0.7121 
+skin 855 Bone.001_dup_0 0.2734 Bone.003 0.7266 
+skin 856 Bone.004 1.0000 
+skin 857 Bone.001_dup_0 0.4280 Bone.003 0.5720 
+skin 858 Bone.004 1.0000 
+skin 859 Bone.001_dup_0 1.0000 
+skin 860 Bone.001_dup_0 0.4280 Bone.003 0.5720 
+skin 861 Bone.002 0.2879 Bone.002Site 0.2870 Bone.003 0.4251 
+skin 862 Bone.002 0.3352 Bone.002Site 0.1798 Bone.007 0.4850 
+skin 863 Bone.002 0.4664 Bone.003 0.5336 
+skin 864 Bone.002 0.3352 Bone.002Site 0.1798 Bone.007 0.4850 
+skin 865 Bone.002 0.5002 Bone.003 0.4998 
+skin 866 Bone.002 0.4664 Bone.003 0.5336 
+skin 867 Bone.001_dup_0 0.6939 Bone.003 0.3061 
+skin 868 Bone.001_dup_0 0.1146 Bone.002 0.3267 Bone.002Site 0.1632 Bone.003 0.2460 Bone.004 0.1495 
+skin 869 Bone.001_dup_0 0.4425 Bone.003 0.5575 
+skin 870 Bone.001_dup_0 0.1146 Bone.002 0.3267 Bone.002Site 0.1632 Bone.003 0.2460 Bone.004 0.1495 
+skin 871 Bone.004 1.0000 
+skin 872 Bone.001_dup_0 0.4425 Bone.003 0.5575 
+skin 873 Bone.002 0.2879 Bone.003 0.7121 
+skin 874 Bone.007 1.0000 
+skin 875 Bone.003 1.0000 
+skin 876 Bone.007 1.0000 
+skin 877 Bone.002 0.5115 Bone.008 0.4885 
+skin 878 Bone.003 1.0000 
+skin 879 Bone.002 0.3121 Bone.003 0.6879 
+skin 880 Bone.002 0.3429 Bone.003 0.6571 
+skin 881 Bone.003 1.0000 
+skin 882 Bone.002 0.3429 Bone.003 0.6571 
+skin 883 Bone.003 1.0000 
+skin 884 Bone.003 1.0000 
+skin 885 Bone.001_dup_0 0.7160 Bone.007 0.2840 
+skin 886 Bone.001_dup_0 0.4483 Bone.001_dup_0 0.5517 
+skin 887 Bone.007 0.5827 Bone.008 0.4173 
+skin 888 Bone.001_dup_0 0.4483 Bone.001_dup_0 0.5517 
+skin 889 Bone.008 1.0000 
+skin 890 Bone.007 0.5827 Bone.008 0.4173 
+skin 891 Bone.003 1.0000 
+skin 892 Bone.002 0.5115 Bone.008 0.4885 
+skin 893 Bone.004 1.0000 
+skin 894 Bone.007 1.0000 
+skin 895 Bone.007 1.0000 
+skin 896 Bone.007 1.0000 
+skin 897 Bone.001_dup_0 1.0000 
+skin 898 Bone.001_dup_0 0.5289 Bone.003 0.4711 
+skin 899 Bone.001_dup_0 1.0000 
+skin 900 Bone 0.4486 Bone.001_dup_0 0.3861 Bone.001_dup_0 0.1653 
+skin 901 Bone.003 1.0000 
+skin 902 Bone.002 0.3082 Bone.003 0.6918 
+skin 903 Bone.001_dup_0 1.0000 
+skin 904 Bone.007 1.0000 
+skin 905 Bone.007 1.0000 
+skin 906 Bone.002Site 1.0000 
+skin 907 Bone.002Site 1.0000 
+skin 908 Bone.002Site 1.0000 
+skin 909 Bone.002Site 1.0000 
+skin 910 Bone.002Site 1.0000 
+skin 911 Bone.002Site 1.0000 
+skin 912 Bone.002Site 1.0000 
+skin 913 Bone.002Site 1.0000 
+skin 914 Bone.002Site 1.0000 
+skin 915 Bone.002Site 1.0000 
+skin 916 Bone.002Site 1.0000 
+skin 917 Bone.002Site 1.0000 
+skin 918 Bone.002Site 1.0000 
+skin 919 Bone.002Site 1.0000 
+skin 920 Bone.002Site 1.0000 
+skin 921 Bone.002Site 1.0000 
+skin 922 Bone.002Site 1.0000 
+skin 923 Bone.002Site 1.0000 
+skin 924 Bone.002Site 1.0000 
+skin 925 Bone.002Site 1.0000 
+skin 926 Bone.002Site 1.0000 
+skin 927 Bone.002Site 1.0000 
+skin 928 Bone.002Site 1.0000 
+skin 929 Bone.002Site 1.0000 
+skin 930 Bone.002Site 1.0000 
+skin 931 Bone.002Site 1.0000 
+skin 932 Bone.002Site 1.0000 
+skin 933 Bone.002Site 1.0000 
+skin 934 Bone.002Site 1.0000 
+skin 935 Bone.002Site 1.0000 
+skin 936 Bone.002Site 1.0000 
+skin 937 Bone.002Site 1.0000 
+skin 938 Bone.002Site 1.0000 
+skin 939 Bone.002Site 1.0000 
+skin 940 Bone.002Site 1.0000 
+skin 941 Bone.002Site 1.0000 
+skin 942 Bone.002Site 1.0000 
+skin 943 Bone.002 0.3728 Bone.002Site 0.1985 Bone.008 0.4287 
+skin 944 Bone.002Site 1.0000 
+skin 945 Bone.002 0.3728 Bone.002Site 0.1985 Bone.008 0.4287 
+skin 946 Bone.002 0.2202 Bone.002Site 0.3256 Bone.007 0.4542 
+skin 947 Bone.002Site 1.0000 
+skin 948 Bone.002 0.5009 Bone.008 0.4991 
+skin 949 Bone.002Site 1.0000 
+skin 950 Bone.001_dup_0 0.1606 Bone.002 0.3818 Bone.002Site 0.1450 Bone.007 0.3127 
+skin 951 Bone.002Site 1.0000 
+skin 952 Bone.002Site 1.0000 
+skin 953 Bone.001_dup_0 0.1606 Bone.002 0.3818 Bone.002Site 0.1450 Bone.007 0.3127 
+skin 954 Bone.002Site 1.0000 
+skin 955 Bone.002Site 1.0000 
+skin 956 Bone.002Site 1.0000 
+skin 957 Bone.002Site 1.0000 
+skin 958 Bone.002Site 1.0000 
+skin 959 Bone.002Site 1.0000 
+skin 960 Bone.002Site 1.0000 
+skin 961 Bone.002Site 1.0000 
+skin 962 Bone.002Site 1.0000 
+skin 963 Bone.002Site 1.0000 
+skin 964 Bone.002Site 1.0000 
+skin 965 Bone.002Site 1.0000 
+skin 966 Bone.002Site 1.0000 
+skin 967 Bone.002Site 1.0000 
+skin 968 Bone.002Site 1.0000 
+skin 969 Bone.002Site 1.0000 
+skin 970 Bone.002Site 1.0000 
+skin 971 Bone.002Site 1.0000 
+skin 972 Bone.002Site 1.0000 
+skin 973 Bone.002Site 1.0000 
+skin 974 Bone.002Site 1.0000 
+skin 975 Bone.002 0.2202 Bone.002Site 0.3256 Bone.007 0.4542 
+skin 976 Bone.002 0.4608 Bone.007 0.5392 
+skin 977 Bone.002 0.6570 Bone.002Site 0.3430 
+skin 978 Bone.002 0.4608 Bone.007 0.5392 
+skin 979 Bone.002 0.3385 Bone.002Site 0.6615 
+skin 980 Bone.002 0.6570 Bone.002Site 0.3430 
+skin 981 Bone.002 0.4608 Bone.007 0.5392 
+skin 982 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 983 Bone.002 0.3385 Bone.002Site 0.6615 
+skin 984 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 985 Bone.002 0.6751 Bone.002Site 0.3249 
+skin 986 Bone.002 0.3385 Bone.002Site 0.6615 
+skin 987 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 988 Bone.002 0.4377 Bone.002Site 0.5623 
+skin 989 Bone.002 0.6751 Bone.002Site 0.3249 
+skin 990 Bone.002 0.4377 Bone.002Site 0.5623 
+skin 991 Bone.002 1.0000 
+skin 992 Bone.002 0.6751 Bone.002Site 0.3249 
+skin 993 Bone.002 0.4377 Bone.002Site 0.5623 
+skin 994 Bone.002 0.5698 Bone.002Site 0.4302 
+skin 995 Bone.002 1.0000 
+skin 996 Bone.006 1.0000 
+skin 997 Bone.006 1.0000 
+skin 998 Bone.006 1.0000 
+skin 999 Bone.006 1.0000 
+skin 1000 Bone.006 1.0000 
+skin 1001 Bone.006 1.0000 
+skin 1002 Bone.006 1.0000 
+skin 1003 Bone.006 1.0000 
+skin 1004 Bone.006 1.0000 
+skin 1005 Bone.006 1.0000 
+skin 1006 Bone.006 1.0000 
+skin 1007 Bone.006 1.0000 
+skin 1008 Bone.006 1.0000 
+skin 1009 Bone.006 0.3541 Bone.006Site 0.6459 
+skin 1010 Bone.006 1.0000 
+skin 1011 Bone.006 0.3541 Bone.006Site 0.6459 
+skin 1012 Bone.006Site 1.0000 
+skin 1013 Bone.006 1.0000 
+skin 1014 Bone.006 0.3541 Bone.006Site 0.6459 
+skin 1015 Bone.006Site 1.0000 
+skin 1016 Bone.006Site 1.0000 
+skin 1017 Bone 0.4176 Bone.001_dup_0 0.5824 
+skin 1018 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1019 Bone 0.5062 Bone.001_dup_0 0.4938 
+skin 1020 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1021 Bone 0.3796 Bone.001_dup_0 0.6204 
+skin 1022 Bone 0.5062 Bone.001_dup_0 0.4938 
+skin 1023 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1024 Bone.001_dup_0 1.0000 
+skin 1025 Bone 0.3796 Bone.001_dup_0 0.6204 
+skin 1026 Bone.001_dup_0 1.0000 
+skin 1027 Bone.001_dup_0 1.0000 
+skin 1028 Bone 0.3796 Bone.001_dup_0 0.6204 
+skin 1029 Bone.001_dup_0 1.0000 
+skin 1030 Bone 0.4797 Bone.001_dup_0 0.5203 
+skin 1031 Bone.001_dup_0 1.0000 
+skin 1032 Bone 0.4797 Bone.001_dup_0 0.5203 
+skin 1033 Bone 0.5931 Bone.001_dup_0 0.4069 
+skin 1034 Bone.001_dup_0 1.0000 
+skin 1035 Bone 0.4797 Bone.001_dup_0 0.5203 
+skin 1036 Bone.001_dup_0 1.0000 
+skin 1037 Bone 0.5931 Bone.001_dup_0 0.4069 
+skin 1038 Bone.002 1.0000 
+skin 1039 Bone.002 1.0000 
+skin 1040 Bone.002 0.5055 Bone.003 0.4945 
+skin 1041 Bone.002 1.0000 
+skin 1042 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 1043 Bone.002 0.5055 Bone.003 0.4945 
+skin 1044 Bone.002 1.0000 
+skin 1045 Bone.002 1.0000 
+skin 1046 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 1047 Bone.002 1.0000 
+skin 1048 Bone.002 0.4377 Bone.002Site 0.5623 
+skin 1049 Bone.002 0.2687 Bone.002Site 0.2693 Bone.007 0.4620 
+skin 1050 Bone.002 1.0000 
+skin 1051 Bone.002 1.0000 
+skin 1052 Bone.002 0.4377 Bone.002Site 0.5623 
+skin 1053 Bone.002 1.0000 
+skin 1054 Bone.002 0.7366 Bone.002Site 0.2634 
+skin 1055 Bone.002 0.4377 Bone.002Site 0.5623 
+skin 1056 Bone.002 0.5062 Bone.003 0.4938 
+skin 1057 Bone.001_dup_0 0.3206 Bone.003 0.4838 Bone.004 0.1956 
+skin 1058 Bone.002Site 1.0000 
+skin 1059 Bone.001_dup_0 0.3206 Bone.003 0.4838 Bone.004 0.1956 
+skin 1060 Bone.002Site 1.0000 
+skin 1061 Bone.002Site 1.0000 
+skin 1062 Bone.001_dup_0 0.3206 Bone.003 0.4838 Bone.004 0.1956 
+skin 1063 Bone.003 0.5090 Bone.007 0.4910 
+skin 1064 Bone.002Site 1.0000 
+skin 1065 Bone.003 0.5090 Bone.007 0.4910 
+skin 1066 Bone.002Site 1.0000 
+skin 1067 Bone.002Site 1.0000 
+skin 1068 Bone.003 0.5090 Bone.007 0.4910 
+skin 1069 Bone.002 0.4638 Bone.007 0.5362 
+skin 1070 Bone.002Site 1.0000 
+skin 1071 Bone.002 0.4638 Bone.007 0.5362 
+skin 1072 Bone.001_dup_0 0.1606 Bone.002 0.3818 Bone.002Site 0.1450 Bone.007 0.3127 
+skin 1073 Bone.002Site 1.0000 
+skin 1074 Bone.002Site 1.0000 
+skin 1075 Bone.002Site 1.0000 
+skin 1076 Bone.002Site 1.0000 
+skin 1077 Bone.002Site 1.0000 
+skin 1078 Bone.002Site 1.0000 
+skin 1079 Bone.002Site 1.0000 
+skin 1080 Bone.002Site 1.0000 
+skin 1081 Bone.002Site 1.0000 
+skin 1082 Bone.002Site 1.0000 
+skin 1083 Bone.002Site 1.0000 
+skin 1084 Bone.002Site 1.0000 
+skin 1085 Bone.002Site 1.0000 
+skin 1086 Bone.002Site 1.0000 
+skin 1087 Bone.002Site 1.0000 
+skin 1088 Bone.002Site 1.0000 
+skin 1089 Bone.002Site 1.0000 
+skin 1090 Bone.002Site 1.0000 
+skin 1091 Bone.002Site 1.0000 
+skin 1092 Bone.006 1.0000 
+skin 1093 Bone.006 1.0000 
+skin 1094 Bone.006 1.0000 
+skin 1095 Bone.006 1.0000 
+skin 1096 Bone.006 1.0000 
+skin 1097 Bone.006 1.0000 
+skin 1098 Bone.006 1.0000 
+skin 1099 Bone.006 1.0000 
+skin 1100 Bone.006 1.0000 
+skin 1101 Bone.006 1.0000 
+skin 1102 Bone.006Site 1.0000 
+skin 1103 Bone.006 1.0000 
+skin 1104 Bone.006 1.0000 
+skin 1105 Bone.006Site 1.0000 
+skin 1106 Bone.006Site 1.0000 
+skin 1107 Bone.002Site 1.0000 
+skin 1108 Bone.002Site 1.0000 
+skin 1109 Bone.002Site 1.0000 
+skin 1110 Bone.002Site 1.0000 
+skin 1111 Bone.002Site 1.0000 
+skin 1112 Bone.002Site 1.0000 
+skin 1113 Bone.002Site 1.0000 
+skin 1114 Bone.002Site 1.0000 
+skin 1115 Bone.002Site 1.0000 
+skin 1116 Bone.002Site 1.0000 
+skin 1117 Bone.002Site 1.0000 
+skin 1118 Bone.002Site 1.0000 
+skin 1119 Bone.002Site 1.0000 
+skin 1120 Bone.002Site 1.0000 
+skin 1121 Bone.002Site 1.0000 
+skin 1122 Bone.002 0.5055 Bone.003 0.4945 
+skin 1123 Bone.002 0.4920 Bone.003 0.5080 
+skin 1124 Bone.002 1.0000 
+skin 1125 Bone.002 0.4920 Bone.003 0.5080 
+skin 1126 Bone.002 1.0000 
+skin 1127 Bone.002 1.0000 
+skin 1128 Bone.002 0.4920 Bone.003 0.5080 
+skin 1129 Bone.002Site 1.0000 
+skin 1130 Bone.002 1.0000 
+skin 1131 Bone.002Site 1.0000 
+skin 1132 Bone.002Site 1.0000 
+skin 1133 Bone.002 1.0000 
+skin 1134 Bone.002Site 1.0000 
+skin 1135 Bone.002Site 1.0000 
+skin 1136 Bone.002Site 1.0000 
+skin 1137 Bone 0.6172 Bone.003 0.3828 
+skin 1138 Bone 1.0000 
+skin 1139 Bone 0.5410 Bone.003 0.4590 
+skin 1140 Bone 1.0000 
+skin 1141 Bone 0.6785 Bone.003 0.3215 
+skin 1142 Bone 0.5410 Bone.003 0.4590 
+skin 1143 Bone 1.0000 
+skin 1144 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1145 Bone 0.6785 Bone.003 0.3215 
+skin 1146 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1147 Bone 1.0000 
+skin 1148 Bone 0.6785 Bone.003 0.3215 
+skin 1149 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1150 Bone 1.0000 
+skin 1151 Bone 1.0000 
+skin 1152 Bone.006 1.0000 
+skin 1153 Bone.006 1.0000 
+skin 1154 Bone.006 1.0000 
+skin 1155 Bone.006 1.0000 
+skin 1156 Bone.006 1.0000 
+skin 1157 Bone.006 1.0000 
+skin 1158 Bone.006 1.0000 
+skin 1159 Bone.006 1.0000 
+skin 1160 Bone.006 1.0000 
+skin 1161 Bone.006 1.0000 
+skin 1162 Bone.006Site 1.0000 
+skin 1163 Bone.006 1.0000 
+skin 1164 Bone.006 1.0000 
+skin 1165 Bone.006Site 1.0000 
+skin 1166 Bone.006Site 1.0000 
+skin 1167 Bone.001_dup_0 1.0000 
+skin 1168 Bone 0.4797 Bone.001_dup_0 0.5203 
+skin 1169 Bone.001_dup_0 1.0000 
+skin 1170 Bone 0.4797 Bone.001_dup_0 0.5203 
+skin 1171 Bone.001_dup_0 1.0000 
+skin 1172 Bone.001_dup_0 1.0000 
+skin 1173 Bone 0.4797 Bone.001_dup_0 0.5203 
+skin 1174 Bone.001_dup_0 1.0000 
+skin 1175 Bone.001_dup_0 1.0000 
+skin 1176 Bone.001_dup_0 1.0000 
+skin 1177 Bone.001_dup_0 1.0000 
+skin 1178 Bone.001_dup_0 1.0000 
+skin 1179 Bone.001_dup_0 1.0000 
+skin 1180 Bone 0.3906 Bone.001_dup_0 0.6094 
+skin 1181 Bone.001_dup_0 1.0000 
+skin 1182 Bone.002 1.0000 
+skin 1183 Bone.002 0.5876 Bone.002Site 0.4124 
+skin 1184 Bone.002 1.0000 
+skin 1185 Bone.002 0.5876 Bone.002Site 0.4124 
+skin 1186 Bone.002 0.7366 Bone.002Site 0.2634 
+skin 1187 Bone.002 1.0000 
+skin 1188 Bone.002 0.5876 Bone.002Site 0.4124 
+skin 1189 Bone.002 0.3996 Bone.002Site 0.6004 
+skin 1190 Bone.002 0.7366 Bone.002Site 0.2634 
+skin 1191 Bone.002 0.3996 Bone.002Site 0.6004 
+skin 1192 Bone.002Site 1.0000 
+skin 1193 Bone.002 0.7366 Bone.002Site 0.2634 
+skin 1194 Bone.002 0.3996 Bone.002Site 0.6004 
+skin 1195 Bone.002Site 1.0000 
+skin 1196 Bone.002Site 1.0000 
+skin 1197 Bone.002Site 1.0000 
+skin 1198 Bone.002Site 1.0000 
+skin 1199 Bone.002Site 1.0000 
+skin 1200 Bone.002Site 1.0000 
+skin 1201 Bone.002Site 1.0000 
+skin 1202 Bone.002Site 1.0000 
+skin 1203 Bone.002Site 1.0000 
+skin 1204 Bone.002Site 1.0000 
+skin 1205 Bone.002Site 1.0000 
+skin 1206 Bone.002Site 1.0000 
+skin 1207 Bone.002Site 1.0000 
+skin 1208 Bone.002Site 1.0000 
+skin 1209 Bone.002Site 1.0000 
+skin 1210 Bone.002Site 1.0000 
+skin 1211 Bone.002Site 1.0000 
+skin 1212 Bone 0.4670 Bone.001_dup_0 0.2242 Bone.007 0.3088 
+skin 1213 Bone 0.3250 Bone.007 0.3529 Bone.004 0.3221 
+skin 1214 Bone 0.4383 Bone.001_dup_0 0.2326 Bone.004 0.3291 
+skin 1215 Bone 0.3250 Bone.007 0.3529 Bone.004 0.3221 
+skin 1216 Bone 0.5088 Bone.001_dup_0 0.2906 Bone.007 0.2006 
+skin 1217 Bone 0.4383 Bone.001_dup_0 0.2326 Bone.004 0.3291 
+skin 1218 Bone 0.3250 Bone.007 0.3529 Bone.004 0.3221 
+skin 1219 Bone 1.0000 
+skin 1220 Bone 0.5088 Bone.001_dup_0 0.2906 Bone.007 0.2006 
+skin 1221 Bone 1.0000 
+skin 1222 Bone 0.6201 Bone.001_dup_0 0.3799 
+skin 1223 Bone 0.5088 Bone.001_dup_0 0.2906 Bone.007 0.2006 
+skin 1224 Bone.006 1.0000 
+skin 1225 Bone.006 0.5690 Bone.006Site 0.4310 
+skin 1226 Bone.006 1.0000 
+skin 1227 Bone.006 0.5690 Bone.006Site 0.4310 
+skin 1228 Bone.006Site 1.0000 
+skin 1229 Bone.006 1.0000 
+skin 1230 Bone.006 0.5690 Bone.006Site 0.4310 
+skin 1231 Bone.005 0.1835 Bone.006 0.4636 Bone.006Site 0.3529 
+skin 1232 Bone.006Site 1.0000 
+skin 1233 Bone.005 0.1835 Bone.006 0.4636 Bone.006Site 0.3529 
+skin 1234 Bone.006 0.4994 Bone.006Site 0.5006 
+skin 1235 Bone.006Site 1.0000 
+skin 1236 Bone.002Site 1.0000 
+skin 1237 Bone.002Site 1.0000 
+skin 1238 Bone.002Site 1.0000 
+skin 1239 Bone.002Site 1.0000 
+skin 1240 Bone.002Site 1.0000 
+skin 1241 Bone.002Site 1.0000 
+skin 1242 Bone.002Site 1.0000 
+skin 1243 Bone.002Site 1.0000 
+skin 1244 Bone.002Site 1.0000 
+skin 1245 Bone.002Site 1.0000 
+skin 1246 Bone.002Site 1.0000 
+skin 1247 Bone.002Site 1.0000 
+skin 1248 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1249 Bone 1.0000 
+skin 1250 Bone.001_dup_0 1.0000 
+skin 1251 Bone 1.0000 
+skin 1252 Bone 1.0000 
+skin 1253 Bone.001_dup_0 1.0000 
+skin 1254 Bone 1.0000 
+skin 1255 Bone 0.6172 Bone.003 0.3828 
+skin 1256 Bone 1.0000 
+skin 1257 Bone 0.6172 Bone.003 0.3828 
+skin 1258 Bone 0.6201 Bone.001_dup_0 0.3799 
+skin 1259 Bone 1.0000 
+skin 1260 Bone 0.2687 Bone.001_dup_0 0.4024 Bone.004 0.3289 
+skin 1261 Bone.001_dup_0 1.0000 
+skin 1262 Bone 0.4670 Bone.001_dup_0 0.2242 Bone.007 0.3088 
+skin 1263 Bone.001_dup_0 1.0000 
+skin 1264 Bone 0.3250 Bone.007 0.3529 Bone.004 0.3221 
+skin 1265 Bone 0.4670 Bone.001_dup_0 0.2242 Bone.007 0.3088 
+skin 1266 Bone.001_dup_0 1.0000 
+skin 1267 Bone.001_dup_0 1.0000 
+skin 1268 Bone 0.3250 Bone.007 0.3529 Bone.004 0.3221 
+skin 1269 Bone.001_dup_0 1.0000 
+skin 1270 Bone 1.0000 
+skin 1271 Bone 0.3250 Bone.007 0.3529 Bone.004 0.3221 
+skin 1272 Bone 1.0000 
+skin 1273 Bone 1.0000 
+skin 1274 Bone.008 1.0000 
+skin 1275 Bone 1.0000 
+skin 1276 Bone.001_dup_0 0.4588 Bone.008 0.5412 
+skin 1277 Bone.008 1.0000 
+skin 1278 Bone 1.0000 
+skin 1279 Bone 0.6651 Bone.001_dup_0 0.3349 
+skin 1280 Bone.001_dup_0 0.4588 Bone.008 0.5412 
+skin 1281 Bone 0.6651 Bone.001_dup_0 0.3349 
+skin 1282 Bone 0.5081 Bone.001_dup_0 0.2956 Bone.007 0.1963 
+skin 1283 Bone.001_dup_0 0.4588 Bone.008 0.5412 
+skin 1284 Bone.002 0.6570 Bone.002Site 0.3430 
+skin 1285 Bone.002 1.0000 
+skin 1286 Bone.002 0.2202 Bone.002Site 0.3256 Bone.007 0.4542 
+skin 1287 Bone.002 1.0000 
+skin 1288 Bone.002Site 1.0000 
+skin 1289 Bone.002 0.2202 Bone.002Site 0.3256 Bone.007 0.4542 
+skin 1290 Bone.002 1.0000 
+skin 1291 Bone.002Site 1.0000 
+skin 1292 Bone.002Site 1.0000 
+skin 1293 Bone.002Site 1.0000 
+skin 1294 Bone.002Site 1.0000 
+skin 1295 Bone.002Site 1.0000 
+skin 1296 Bone.002 0.2202 Bone.002Site 0.3256 Bone.007 0.4542 
+skin 1297 Bone.002Site 1.0000 
+skin 1298 Bone.002Site 1.0000 
+skin 1299 Bone.002Site 1.0000 
+skin 1300 Bone.002Site 1.0000 
+skin 1301 Bone.002Site 1.0000 
+skin 1302 Bone.002Site 1.0000 
+skin 1303 Bone.002Site 1.0000 
+skin 1304 Bone.002Site 1.0000 
+skin 1305 Bone.002Site 1.0000 
+skin 1306 Bone.002Site 1.0000 
+skin 1307 Bone.002Site 1.0000 
+skin 1308 Bone.002Site 1.0000 
+skin 1309 Bone.002 0.5698 Bone.002Site 0.4302 
+skin 1310 Bone.002Site 1.0000 
+skin 1311 Bone.002 0.5698 Bone.002Site 0.4302 
+skin 1312 Bone.002Site 1.0000 
+skin 1313 Bone.002Site 1.0000 
+skin 1314 Bone.002 0.5698 Bone.002Site 0.4302 
+skin 1315 Bone.002 0.4377 Bone.002Site 0.5623 
+skin 1316 Bone.002Site 1.0000 
+skin 1317 Bone.002 0.4377 Bone.002Site 0.5623 
+skin 1318 Bone.002 0.7366 Bone.002Site 0.2634 
+skin 1319 Bone.002Site 1.0000 
+skin 1320 Bone.002Site 1.0000 
+skin 1321 Bone.002 0.3996 Bone.002Site 0.6004 
+skin 1322 Bone.002Site 1.0000 
+skin 1323 Bone.002 0.3996 Bone.002Site 0.6004 
+skin 1324 Bone.002Site 1.0000 
+skin 1325 Bone.002Site 1.0000 
+skin 1326 Bone.002 0.3996 Bone.002Site 0.6004 
+skin 1327 Bone.002 0.5876 Bone.002Site 0.4124 
+skin 1328 Bone.002Site 1.0000 
+skin 1329 Bone.002 0.5876 Bone.002Site 0.4124 
+skin 1330 Bone.002 1.0000 
+skin 1331 Bone.002Site 1.0000 
+skin 1332 Bone.002 1.0000 
+skin 1333 Bone.002 0.5698 Bone.002Site 0.4302 
+skin 1334 Bone.002 0.4770 Bone.002Site 0.5230 
+skin 1335 Bone.002 0.5698 Bone.002Site 0.4302 
+skin 1336 Bone.002 0.4327 Bone.002Site 0.5673 
+skin 1337 Bone.002 0.4770 Bone.002Site 0.5230 
+skin 1338 Bone.002 0.5698 Bone.002Site 0.4302 
+skin 1339 Bone.002Site 1.0000 
+skin 1340 Bone.002 0.4327 Bone.002Site 0.5673 
+skin 1341 Bone.002Site 1.0000 
+skin 1342 Bone.002Site 1.0000 
+skin 1343 Bone.002 0.4327 Bone.002Site 0.5673 
+skin 1344 Bone 0.6201 Bone.001_dup_0 0.3799 
+skin 1345 Bone 0.6172 Bone.003 0.3828 
+skin 1346 Bone.001_dup_0 1.0000 
+skin 1347 Bone 0.6172 Bone.003 0.3828 
+skin 1348 Bone.001_dup_0 0.4483 Bone.001_dup_0 0.5517 
+skin 1349 Bone.001_dup_0 1.0000 
+skin 1350 Bone 0.6172 Bone.003 0.3828 
+skin 1351 Bone 0.5410 Bone.003 0.4590 
+skin 1352 Bone.001_dup_0 0.4483 Bone.001_dup_0 0.5517 
+skin 1353 Bone 0.5410 Bone.003 0.4590 
+skin 1354 Bone 0.6785 Bone.003 0.3215 
+skin 1355 Bone.001_dup_0 0.4483 Bone.001_dup_0 0.5517 
+skin 1356 Bone 0.3796 Bone.001_dup_0 0.6204 
+skin 1357 Bone.001_dup_0 1.0000 
+skin 1358 Bone 1.0000 
+skin 1359 Bone.001_dup_0 1.0000 
+skin 1360 Bone 1.0000 
+skin 1361 Bone 1.0000 
+skin 1362 Bone.001_dup_0 1.0000 
+skin 1363 Bone 1.0000 
+skin 1364 Bone 1.0000 
+skin 1365 Bone.001_dup_0 0.6694 Bone.003 0.3306 
+skin 1366 Bone.004 1.0000 
+skin 1367 Bone 0.4670 Bone.001_dup_0 0.2242 Bone.007 0.3088 
+skin 1368 Bone.004 1.0000 
+skin 1369 Bone 0.2687 Bone.001_dup_0 0.4024 Bone.004 0.3289 
+skin 1370 Bone 0.4670 Bone.001_dup_0 0.2242 Bone.007 0.3088 
+skin 1371 Bone.004 1.0000 
+skin 1372 Bone 0.4211 Bone.003 0.1998 Bone.004 0.3792 
+skin 1373 Bone 0.2687 Bone.001_dup_0 0.4024 Bone.004 0.3289 
+skin 1374 Bone 0.5482 Bone.001_dup_0 0.4518 
+skin 1375 Bone 0.7265 Bone.001_dup_0 0.2735 
+skin 1376 Bone 0.5062 Bone.001_dup_0 0.4938 
+skin 1377 Bone 0.7265 Bone.001_dup_0 0.2735 
+skin 1378 Bone 0.4176 Bone.001_dup_0 0.5824 
+skin 1379 Bone 0.5062 Bone.001_dup_0 0.4938 
+skin 1380 Bone 0.7265 Bone.001_dup_0 0.2735 
+skin 1381 Bone 0.5081 Bone.001_dup_0 0.2956 Bone.007 0.1963 
+skin 1382 Bone 0.4176 Bone.001_dup_0 0.5824 
+skin 1383 Bone.001_dup_0 0.4520 Bone.004 0.5480 
+skin 1384 Bone 0.2986 Bone.001_dup_0 0.4364 Bone.003 0.2650 
+skin 1385 Bone 0.3906 Bone.001_dup_0 0.6094 
+skin 1386 Bone 0.2986 Bone.001_dup_0 0.4364 Bone.003 0.2650 
+skin 1387 Bone.001_dup_0 1.0000 
+skin 1388 Bone 0.3906 Bone.001_dup_0 0.6094 
+skin 1389 Bone 0.2986 Bone.001_dup_0 0.4364 Bone.003 0.2650 
+skin 1390 Bone.001_dup_0 1.0000 
+skin 1391 Bone.001_dup_0 1.0000 
+skin 1392 Bone 0.5598 Bone.001_dup_0 0.4402 
+skin 1393 Bone 0.3677 Bone.001_dup_0 0.6323 
+skin 1394 Bone.001_dup_0 0.6737 Bone.001_dup_0 0.3263 
+skin 1395 Bone 0.3677 Bone.001_dup_0 0.6323 
+skin 1396 Bone 1.0000 
+skin 1397 Bone.001_dup_0 0.6737 Bone.001_dup_0 0.3263 
+skin 1398 Bone 0.3677 Bone.001_dup_0 0.6323 
+skin 1399 Bone 1.0000 
+skin 1400 Bone 1.0000 
+skin 1401 Bone 1.0000 
+skin 1402 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1403 Bone 0.6651 Bone.001_dup_0 0.3349 
+skin 1404 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1405 Bone 0.5081 Bone.001_dup_0 0.2956 Bone.007 0.1963 
+skin 1406 Bone 0.6651 Bone.001_dup_0 0.3349 
+skin 1407 Bone 0.4351 Bone.001_dup_0 0.5649 
+skin 1408 Bone 0.4176 Bone.001_dup_0 0.5824 
+skin 1409 Bone 0.5081 Bone.001_dup_0 0.2956 Bone.007 0.1963 
+skin 1410 Bone 0.5062 Bone.001_dup_0 0.4938 
+skin 1411 Bone 0.3796 Bone.001_dup_0 0.6204 
+skin 1412 Bone 0.3116 Bone.001_dup_0 0.6884 
+skin 1413 Bone 0.3796 Bone.001_dup_0 0.6204 
+skin 1414 Bone 0.4205 Bone.001_dup_0 0.5795 
+skin 1415 Bone 0.3116 Bone.001_dup_0 0.6884 
+skin 1416 Bone 0.3796 Bone.001_dup_0 0.6204 
+skin 1417 Bone 1.0000 
+skin 1418 Bone 0.4205 Bone.001_dup_0 0.5795 
+skin 1419 Bone 0.3677 Bone.001_dup_0 0.6323 
+skin 1420 Bone.001_dup_0 1.0000 
+skin 1421 Bone 1.0000 
+skin 1422 Bone.001_dup_0 1.0000 
+skin 1423 Bone 1.0000 
+skin 1424 Bone 1.0000 
+skin 1425 Bone.001_dup_0 1.0000 
+skin 1426 Bone 0.4205 Bone.001_dup_0 0.5795 
+skin 1427 Bone 1.0000 
+skin 1428 Bone.001_dup_0 1.0000 
+skin 1429 Bone 0.5482 Bone.001_dup_0 0.4518 
+skin 1430 Bone 0.4205 Bone.001_dup_0 0.5795 
+skin 1431 Bone 0.5482 Bone.001_dup_0 0.4518 
+skin 1432 Bone 0.3116 Bone.001_dup_0 0.6884 
+skin 1433 Bone 0.4205 Bone.001_dup_0 0.5795 
+skin 1434 Bone 0.5482 Bone.001_dup_0 0.4518 
+skin 1435 Bone 0.5062 Bone.001_dup_0 0.4938 
+skin 1436 Bone 0.3116 Bone.001_dup_0 0.6884 
+skin 1437 Bone 0.3906 Bone.001_dup_0 0.6094 
+skin 1438 Bone.001_dup_0 1.0000 
+skin 1439 Bone 0.6141 Bone.001_dup_0 0.3859 
+skin 1440 Bone.001_dup_0 1.0000 
+skin 1441 Bone 0.4211 Bone.003 0.1998 Bone.004 0.3792 
+skin 1442 Bone 0.6141 Bone.001_dup_0 0.3859 
+skin 1443 Bone.001_dup_0 1.0000 
+skin 1444 Bone 0.2687 Bone.001_dup_0 0.4024 Bone.004 0.3289 
+skin 1445 Bone 0.4211 Bone.003 0.1998 Bone.004 0.3792 
+skin 1446 Bone.002 1.0000 
+skin 1447 Bone.002 0.5876 Bone.002Site 0.4124 
+skin 1448 Bone.002 1.0000 
+skin 1449 Bone.002 0.5876 Bone.002Site 0.4124 
+skin 1450 Bone.002 1.0000 
+skin 1451 Bone.002 1.0000 
+skin 1452 Bone.002 0.5876 Bone.002Site 0.4124 
+skin 1453 Bone.002 1.0000 
+skin 1454 Bone.002 1.0000 
+skin 1455 Bone 0.2986 Bone.001_dup_0 0.4364 Bone.003 0.2650 
+skin 1456 Bone.001_dup_0 0.6179 Bone.001_dup_0 0.3821 
+skin 1457 Bone.001_dup_0 1.0000 
+skin 1458 Bone.001_dup_0 0.6179 Bone.001_dup_0 0.3821 
+skin 1459 Bone.001_dup_0 1.0000 
+skin 1460 Bone.001_dup_0 1.0000 
+skin 1461 Bone.001_dup_0 0.6179 Bone.001_dup_0 0.3821 
+skin 1462 Bone.001_dup_0 1.0000 
+skin 1463 Bone.001_dup_0 1.0000 
+skin 1464 Bone.002 1.0000 
+skin 1465 Bone.002 0.4770 Bone.002Site 0.5230 
+skin 1466 Bone.002 0.6751 Bone.002Site 0.3249 
+skin 1467 Bone.002 0.4770 Bone.002Site 0.5230 
+skin 1468 Bone.002 0.3385 Bone.002Site 0.6615 
+skin 1469 Bone.002 0.6751 Bone.002Site 0.3249 
+skin 1470 Bone.002 0.4770 Bone.002Site 0.5230 
+skin 1471 Bone.002 0.6570 Bone.002Site 0.3430 
+skin 1472 Bone.002 0.3385 Bone.002Site 0.6615 
+skin 1473 Bone.002Site 1.0000 
+skin 1474 Bone.002Site 1.0000 
+skin 1475 Bone.002Site 1.0000 
+skin 1476 Bone.002Site 1.0000 
+skin 1477 Bone.002 0.7366 Bone.002Site 0.2634 
+skin 1478 Bone.002Site 1.0000 
+skin 1479 Bone.002Site 1.0000 
+skin 1480 Bone.002Site 1.0000 
+skin 1481 Bone.002 0.7366 Bone.002Site 0.2634 
+skin 1482 Bone.002 0.6570 Bone.002Site 0.3430 
+skin 1483 Bone.002 0.4770 Bone.002Site 0.5230 
+skin 1484 Bone.002 1.0000 
+skin 1485 Bone.002 0.4770 Bone.002Site 0.5230 
+skin 1486 Bone.002Site 1.0000 
+skin 1487 Bone.002 1.0000 
+skin 1488 Bone.002 0.4770 Bone.002Site 0.5230 
+skin 1489 Bone.002 0.4327 Bone.002Site 0.5673 
+skin 1490 Bone.002Site 1.0000 
+skin 1491 Bone.004 1.0000 
+skin 1492 Bone.001_dup_0 0.4520 Bone.004 0.5480 
+skin 1493 Bone 0.4211 Bone.003 0.1998 Bone.004 0.3792 
+skin 1494 Bone.001_dup_0 0.4520 Bone.004 0.5480 
+skin 1495 Bone 0.6141 Bone.001_dup_0 0.3859 
+skin 1496 Bone 0.4211 Bone.003 0.1998 Bone.004 0.3792 
+skin 1497 Bone.001_dup_0 0.4520 Bone.004 0.5480 
+skin 1498 Bone 0.3906 Bone.001_dup_0 0.6094 
+skin 1499 Bone 0.6141 Bone.001_dup_0 0.3859 
+skin 1500 Bone.002Site 1.0000 
+skin 1501 Bone.002Site 1.0000 
+skin 1502 Bone.002 0.5062 Bone.003 0.4938 
+skin 1503 Bone.002Site 1.0000 
+skin 1504 Bone.002 0.4920 Bone.003 0.5080 
+skin 1505 Bone.002 0.5062 Bone.003 0.4938 
+skin 1506 Bone.002Site 1.0000 
+skin 1507 Bone.002Site 1.0000 
+skin 1508 Bone.002 0.4920 Bone.003 0.5080 
+skin 1509 Bone.001_dup_0 0.6179 Bone.001_dup_0 0.3821 
+skin 1510 Bone 0.5598 Bone.001_dup_0 0.4402 
+skin 1511 Bone.001_dup_0 1.0000 
+skin 1512 Bone 0.5598 Bone.001_dup_0 0.4402 
+skin 1513 Bone 0.5931 Bone.001_dup_0 0.4069 
+skin 1514 Bone.001_dup_0 1.0000 
+skin 1515 Bone 0.5598 Bone.001_dup_0 0.4402 
+skin 1516 Bone.001_dup_0 0.6737 Bone.001_dup_0 0.3263 
+skin 1517 Bone 0.5931 Bone.001_dup_0 0.4069 
+skin 1518 Bone.002Site 1.0000 
+skin 1519 Bone.002Site 1.0000 
+skin 1520 Bone.002Site 1.0000 
+skin 1521 Bone.002Site 1.0000 
+skin 1522 Bone.002Site 1.0000 
+skin 1523 Bone.002Site 1.0000 
+skin 1524 Bone.002Site 1.0000 
+skin 1525 Bone.002Site 1.0000 
+skin 1526 Bone.002Site 1.0000 
+skin 1527 Bone.002Site 1.0000 
+skin 1528 Bone.002Site 1.0000 
+skin 1529 Bone.002Site 1.0000 
+skin 1530 Bone.002Site 1.0000 
+skin 1531 Bone.002Site 1.0000 
+skin 1532 Bone.002Site 1.0000 
+skin 1533 Bone.002Site 1.0000 
+skin 1534 Bone.002Site 1.0000 
+skin 1535 Bone.002Site 1.0000 
+skin 1536 Bone 1.0000 
+skin 1537 Bone.001_dup_0 1.0000 
+skin 1538 Bone.001_dup_0 0.6737 Bone.001_dup_0 0.3263 
+skin 1539 Bone.001_dup_0 1.0000 
+skin 1540 Bone 0.5931 Bone.001_dup_0 0.4069 
+skin 1541 Bone.001_dup_0 0.6737 Bone.001_dup_0 0.3263 
+skin 1542 Bone 0.4670 Bone.001_dup_0 0.2242 Bone.007 0.3088 
+skin 1543 Bone 0.4383 Bone.001_dup_0 0.2326 Bone.004 0.3291 
+skin 1544 Bone.001_dup_0 0.6694 Bone.003 0.3306 
+skin 1545 Bone 0.4383 Bone.001_dup_0 0.2326 Bone.004 0.3291 
+skin 1546 Bone 0.5088 Bone.001_dup_0 0.2906 Bone.007 0.2006 
+skin 1547 Bone.001_dup_0 0.6694 Bone.003 0.3306 
+skin 1548 Bone.002 0.3728 Bone.002Site 0.1985 Bone.008 0.4287 
+skin 1549 Bone.002Site 1.0000 
+skin 1550 Bone.002 0.5009 Bone.008 0.4991 
+skin 1551 Bone.002Site 1.0000 
+skin 1552 Bone.002Site 1.0000 
+skin 1553 Bone.002 0.5009 Bone.008 0.4991 
+skin 1554 Bone.006Site 1.0000 
+skin 1555 Bone.006Site 1.0000 
+skin 1556 Bone.006 1.0000 
+skin 1557 Bone.006Site 1.0000 
+skin 1558 Bone.006 1.0000 
+skin 1559 Bone.006 1.0000 
+skin 1560 Bone.001_dup_0 0.4483 Bone.001_dup_0 0.5517 
+skin 1561 Bone 0.6785 Bone.003 0.3215 
+skin 1562 Bone.008 1.0000 
+skin 1563 Bone 0.6785 Bone.003 0.3215 
+skin 1564 Bone 1.0000 
+skin 1565 Bone.008 1.0000 
+skin 1566 Bone.006 1.0000 
+skin 1567 Bone.006Site 1.0000 
+skin 1568 Bone.006 1.0000 
+skin 1569 Bone.006Site 1.0000 
+skin 1570 Bone.006 0.3541 Bone.006Site 0.6459 
+skin 1571 Bone.006 1.0000 
+skin 1572 Bone.006 1.0000 
+skin 1573 Bone.006 1.0000 
+skin 1574 Bone.006 0.4994 Bone.006Site 0.5006 
+skin 1575 Bone.006 1.0000 
+skin 1576 Bone.006Site 1.0000 
+skin 1577 Bone.006 0.4994 Bone.006Site 0.5006 
+skin 1578 Bone.001_dup_0 0.6694 Bone.003 0.3306 
+skin 1579 Bone 0.5088 Bone.001_dup_0 0.2906 Bone.007 0.2006 
+skin 1580 Bone.001_dup_0 1.0000 
+skin 1581 Bone 0.5088 Bone.001_dup_0 0.2906 Bone.007 0.2006 
+skin 1582 Bone 0.6201 Bone.001_dup_0 0.3799 
+skin 1583 Bone.001_dup_0 1.0000 
+skin 1584 Bone.002Site 1.0000 
+skin 1585 Bone.002Site 1.0000 
+skin 1586 Bone.002 0.4327 Bone.002Site 0.5673 
+skin 1587 Bone.002Site 1.0000 
+skin 1588 Bone.002Site 1.0000 
+skin 1589 Bone.002 0.4327 Bone.002Site 0.5673 
+skin 1590 Bone.002Site 1.0000 
+skin 1591 Bone.002Site 1.0000 
+skin 1592 Bone.002Site 1.0000 
+skin 1593 Bone.002Site 1.0000 
+skin 1594 Bone.002Site 1.0000 
+skin 1595 Bone.002Site 1.0000 
+skin 1596 Bone.002Site 1.0000 
+skin 1597 Bone.002Site 1.0000 
+skin 1598 Bone.002Site 1.0000 
+skin 1599 Bone.002Site 1.0000 
+skin 1600 Bone.002Site 1.0000 
+skin 1601 Bone.002Site 1.0000 
+skin 1602 Bone.002Site 1.0000 
+skin 1603 Bone.002Site 1.0000 
+skin 1604 Bone.002Site 1.0000 
+skin 1605 Bone.002Site 1.0000 
+skin 1606 Bone.002Site 1.0000 
+skin 1607 Bone.002Site 1.0000 
+skin 1608 Bone.002Site 1.0000 
+skin 1609 Bone.002Site 1.0000 
+skin 1610 Bone.002Site 1.0000 
+skin 1611 Bone.002Site 1.0000 
+skin 1612 Bone.002Site 1.0000 
+skin 1613 Bone.002Site 1.0000 
+skin 1614 Bone.002Site 1.0000 
+skin 1615 Bone.002Site 1.0000 
+skin 1616 Bone.002Site 1.0000 
+skin 1617 Bone.001_dup_0 1.0000 
+skin 1618 Bone.001_dup_0 1.0000 
+skin 1619 Bone 0.4797 Bone.001_dup_0 0.5203 
+skin 1620 Bone.001_dup_0 0.4588 Bone.008 0.5412 
+skin 1621 Bone 0.5081 Bone.001_dup_0 0.2956 Bone.007 0.1963 
+skin 1622 Bone 0.7265 Bone.001_dup_0 0.2735 
+skin 1623 Bone.003 0.5872 Bone.004 0.4128 
+skin 1624 Bone.004 1.0000 
+skin 1625 Bone.002 0.4673 Bone.003 0.5327 
+skin 1626 Bone.004 1.0000 
+skin 1627 Bone.004 1.0000 
+skin 1628 Bone.002 0.4673 Bone.003 0.5327 
+skin 1629 Bone.004 1.0000 
+skin 1630 Bone.004 1.0000 
+skin 1631 Bone.004 1.0000 
+skin 1632 Bone.004 1.0000 
+skin 1633 Bone.004 1.0000 
+skin 1634 Bone.004 1.0000 
+skin 1635 Bone.004 1.0000 
+skin 1636 Bone.004 1.0000 
+skin 1637 Bone.004 1.0000 
+skin 1638 Bone.004 1.0000 
+skin 1639 Bone.004 1.0000 
+skin 1640 Bone.004 1.0000 
+skin 1641 Bone.004 1.0000 
+skin 1642 Bone.004 1.0000 
+skin 1643 Bone.004 1.0000 
+skin 1644 Bone.004 1.0000 
+skin 1645 Bone.004 1.0000 
+skin 1646 Bone.004 1.0000 
+skin 1647 Bone.004 1.0000 
+skin 1648 Bone.004 1.0000 
+skin 1649 Bone.004 1.0000 
+skin 1650 Bone.004 1.0000 
+skin 1651 Bone.004 1.0000 
+skin 1652 Bone.004 1.0000 
+skin 1653 Bone.004 1.0000 
+skin 1654 Bone.004 1.0000 
+skin 1655 Bone.004 1.0000 
+skin 1656 Bone.004 1.0000 
+skin 1657 Bone.004 0.7341 Bone.005 0.2659 
+skin 1658 Bone.004 1.0000 
+skin 1659 Bone.004 1.0000 
+skin 1660 Bone.004 0.5938 Bone.005 0.4062 
+skin 1661 Bone.004 0.7341 Bone.005 0.2659 
+skin 1662 Bone.004 0.5938 Bone.005 0.4062 
+skin 1663 Bone.004 0.6276 Bone.005 0.3724 
+skin 1664 Bone.004 0.7341 Bone.005 0.2659 
+skin 1665 Bone.004 0.5938 Bone.005 0.4062 
+skin 1666 Bone.004 0.5055 Bone.005 0.4945 
+skin 1667 Bone.004 0.6276 Bone.005 0.3724 
+skin 1668 Bone.004 0.5055 Bone.005 0.4945 
+skin 1669 Bone.005 1.0000 
+skin 1670 Bone.004 0.6276 Bone.005 0.3724 
+skin 1671 Bone.004 0.5055 Bone.005 0.4945 
+skin 1672 Bone.005 1.0000 
+skin 1673 Bone.005 1.0000 
+skin 1674 Bone.005 1.0000 
+skin 1675 Bone.005 1.0000 
+skin 1676 Bone.005 1.0000 
+skin 1677 Bone.005 1.0000 
+skin 1678 Bone.005 1.0000 
+skin 1679 Bone.005 1.0000 
+skin 1680 Bone.005 1.0000 
+skin 1681 Bone.005 0.3015 Bone.006 0.6985 
+skin 1682 Bone.005 1.0000 
+skin 1683 Bone.005 1.0000 
+skin 1684 Bone.005 0.4020 Bone.006 0.5980 
+skin 1685 Bone.005 0.3015 Bone.006 0.6985 
+skin 1686 Bone.005 0.4020 Bone.006 0.5980 
+skin 1687 Bone.005 0.5092 Bone.006 0.4908 
+skin 1688 Bone.005 0.3015 Bone.006 0.6985 
+skin 1689 Bone.005 1.0000 
+skin 1690 Bone.005 0.3015 Bone.006 0.6985 
+skin 1691 Bone.005 1.0000 
+skin 1692 Bone.005 0.3015 Bone.006 0.6985 
+skin 1693 Bone.005 1.0000 
+skin 1694 Bone.005 1.0000 
+skin 1695 Bone.005 0.3015 Bone.006 0.6985 
+skin 1696 Bone.005 1.0000 
+skin 1697 Bone.005 1.0000 
+skin 1698 Bone.005 1.0000 
+skin 1699 Bone.005 1.0000 
+skin 1700 Bone.005 1.0000 
+skin 1701 Bone.005 1.0000 
+skin 1702 Bone.004 0.4392 Bone.005 0.5608 
+skin 1703 Bone.005 1.0000 
+skin 1704 Bone.004 0.4392 Bone.005 0.5608 
+skin 1705 Bone.004 1.0000 
+skin 1706 Bone.005 1.0000 
+skin 1707 Bone.004 0.4392 Bone.005 0.5608 
+skin 1708 Bone.005 1.0000 
+skin 1709 Bone.004 1.0000 
+skin 1710 Bone.005 1.0000 
+skin 1711 Bone.004 0.2880 Bone.005 0.7120 
+skin 1712 Bone.004 1.0000 
+skin 1713 Bone.005 1.0000 
+skin 1714 Bone.005 1.0000 
+skin 1715 Bone.004 0.2880 Bone.005 0.7120 
+skin 1716 Bone.005 1.0000 
+skin 1717 Bone.005 1.0000 
+skin 1718 Bone.004 0.2880 Bone.005 0.7120 
+skin 1719 Bone.005 1.0000 
+skin 1720 Bone.005 1.0000 
+skin 1721 Bone.005 1.0000 
+skin 1722 Bone.005 1.0000 
+skin 1723 Bone.005 1.0000 
+skin 1724 Bone.005 1.0000 
+skin 1725 Bone.005 1.0000 
+skin 1726 Bone.005 1.0000 
+skin 1727 Bone.005 1.0000 
+skin 1728 Bone.005 1.0000 
+skin 1729 Bone.005 1.0000 
+skin 1730 Bone.005 1.0000 
+skin 1731 Bone.004 1.0000 
+skin 1732 Bone.004 1.0000 
+skin 1733 Bone.004 1.0000 
+skin 1734 Bone.004 1.0000 
+skin 1735 Bone.004 1.0000 
+skin 1736 Bone.004 1.0000 
+skin 1737 Bone.004 1.0000 
+skin 1738 Bone.004 0.7341 Bone.005 0.2659 
+skin 1739 Bone.004 1.0000 
+skin 1740 Bone.004 0.7341 Bone.005 0.2659 
+skin 1741 Bone.004 1.0000 
+skin 1742 Bone.004 1.0000 
+skin 1743 Bone.004 0.7341 Bone.005 0.2659 
+skin 1744 Bone.004 0.6276 Bone.005 0.3724 
+skin 1745 Bone.004 1.0000 
+skin 1746 Bone.004 0.6276 Bone.005 0.3724 
+skin 1747 Bone.004 1.0000 
+skin 1748 Bone.004 1.0000 
+skin 1749 Bone.004 0.6276 Bone.005 0.3724 
+skin 1750 Bone.005 1.0000 
+skin 1751 Bone.004 1.0000 
+skin 1752 Bone.005 1.0000 
+skin 1753 Bone.004 1.0000 
+skin 1754 Bone.004 1.0000 
+skin 1755 Bone.006 1.0000 
+skin 1756 Bone.006 0.4994 Bone.006Site 0.5006 
+skin 1757 Bone.005 0.5092 Bone.006 0.4908 
+skin 1758 Bone.006 0.4994 Bone.006Site 0.5006 
+skin 1759 Bone.005 0.5121 Bone.006 0.4879 
+skin 1760 Bone.005 0.5092 Bone.006 0.4908 
+skin 1761 Bone.006 0.4994 Bone.006Site 0.5006 
+skin 1762 Bone.005 0.1835 Bone.006 0.4636 Bone.006Site 0.3529 
+skin 1763 Bone.005 0.5121 Bone.006 0.4879 
+skin 1764 Bone.005 0.1835 Bone.006 0.4636 Bone.006Site 0.3529 
+skin 1765 Bone.005 0.7137 Bone.006 0.2863 
+skin 1766 Bone.005 0.5121 Bone.006 0.4879 
+skin 1767 Bone.005 0.1835 Bone.006 0.4636 Bone.006Site 0.3529 
+skin 1768 Bone.005 0.5812 Bone.006 0.4188 
+skin 1769 Bone.005 0.7137 Bone.006 0.2863 
+skin 1770 Bone.005 1.0000 
+skin 1771 Bone.005 1.0000 
+skin 1772 Bone.004 0.4392 Bone.005 0.5608 
+skin 1773 Bone.005 1.0000 
+skin 1774 Bone.005 1.0000 
+skin 1775 Bone.004 0.4392 Bone.005 0.5608 
+skin 1776 Bone.005 1.0000 
+skin 1777 Bone.005 1.0000 
+skin 1778 Bone.005 1.0000 
+skin 1779 Bone.005 1.0000 
+skin 1780 Bone.005 1.0000 
+skin 1781 Bone.005 1.0000 
+skin 1782 Bone.005 1.0000 
+skin 1783 Bone.005 0.7137 Bone.006 0.2863 
+skin 1784 Bone.005 1.0000 
+skin 1785 Bone.006 1.0000 
+skin 1786 Bone.006 1.0000 
+skin 1787 Bone.006 1.0000 
+skin 1788 Bone.006 1.0000 
+skin 1789 Bone.006 1.0000 
+skin 1790 Bone.006 1.0000 
+skin 1791 Bone.006 1.0000 
+skin 1792 Bone.006 0.6407 Bone.006Site 0.3593 
+skin 1793 Bone.006 1.0000 
+skin 1794 Bone.006 0.6407 Bone.006Site 0.3593 
+skin 1795 Bone.005 1.0000 
+skin 1796 Bone.006 1.0000 
+skin 1797 Bone.006 1.0000 
+skin 1798 Bone.006 1.0000 
+skin 1799 Bone.006 1.0000 
+skin 1800 Bone.006 1.0000 
+skin 1801 Bone.006 1.0000 
+skin 1802 Bone.006 1.0000 
+skin 1803 Bone.006 1.0000 
+skin 1804 Bone.005 0.4020 Bone.006 0.5980 
+skin 1805 Bone.006 1.0000 
+skin 1806 Bone.005 0.4020 Bone.006 0.5980 
+skin 1807 Bone.005 1.0000 
+skin 1808 Bone.006 1.0000 
+skin 1809 Bone.005 1.0000 
+skin 1810 Bone.005 1.0000 
+skin 1811 Bone.006 1.0000 
+skin 1812 Bone.005 1.0000 
+skin 1813 Bone.006 0.5690 Bone.006Site 0.4310 
+skin 1814 Bone.006 1.0000 
+skin 1815 Bone.005 1.0000 
+skin 1816 Bone.005 0.5812 Bone.006 0.4188 
+skin 1817 Bone.006 0.5690 Bone.006Site 0.4310 
+skin 1818 Bone.005 0.5812 Bone.006 0.4188 
+skin 1819 Bone.005 0.1835 Bone.006 0.4636 Bone.006Site 0.3529 
+skin 1820 Bone.006 0.5690 Bone.006Site 0.4310 
+skin 1821 Bone.006 1.0000 
+skin 1822 Bone.006 1.0000 
+skin 1823 Bone.006 1.0000 
+skin 1824 Bone.006 1.0000 
+skin 1825 Bone.006 1.0000 
+skin 1826 Bone.006 1.0000 
+skin 1827 Bone.006 1.0000 
+skin 1828 Bone.006 1.0000 
+skin 1829 Bone.006 1.0000 
+skin 1830 Bone.006 1.0000 
+skin 1831 Bone.006 1.0000 
+skin 1832 Bone.006 1.0000 
+skin 1833 Bone.006 1.0000 
+skin 1834 Bone.006 1.0000 
+skin 1835 Bone.006 0.6407 Bone.006Site 0.3593 
+skin 1836 Bone.006 1.0000 
+skin 1837 Bone.005 1.0000 
+skin 1838 Bone.006 0.6407 Bone.006Site 0.3593 
+skin 1839 Bone.006 1.0000 
+skin 1840 Bone.005 1.0000 
+skin 1841 Bone.005 1.0000 
+skin 1842 Bone.006 1.0000 
+skin 1843 Bone.006 0.7231 Bone.006Site 0.2769 
+skin 1844 Bone.006 1.0000 
+skin 1845 Bone.006 0.7231 Bone.006Site 0.2769 
+skin 1846 Bone.006 1.0000 
+skin 1847 Bone.006 1.0000 
+skin 1848 Bone.006 0.7231 Bone.006Site 0.2769 
+skin 1849 Bone.006 1.0000 
+skin 1850 Bone.006 1.0000 
+skin 1851 Bone.005 1.0000 
+skin 1852 Bone.005 1.0000 
+skin 1853 Bone.005 1.0000 
+skin 1854 Bone.005 1.0000 
+skin 1855 Bone.005 0.5812 Bone.006 0.4188 
+skin 1856 Bone.005 1.0000 
+skin 1857 Bone.005 1.0000 
+skin 1858 Bone.005 0.7137 Bone.006 0.2863 
+skin 1859 Bone.005 0.5812 Bone.006 0.4188 
+skin 1860 Bone.005 1.0000 
+skin 1861 Bone.005 1.0000 
+skin 1862 Bone.005 0.7137 Bone.006 0.2863 
+skin 1863 Bone.005 1.0000 
+skin 1864 Bone.005 0.5121 Bone.006 0.4879 
+skin 1865 Bone.005 0.7137 Bone.006 0.2863 
+skin 1866 Bone.005 1.0000 
+skin 1867 Bone.005 0.5092 Bone.006 0.4908 
+skin 1868 Bone.005 0.5121 Bone.006 0.4879 
+skin 1869 Bone.005 1.0000 
+skin 1870 Bone.005 1.0000 
+skin 1871 Bone.005 1.0000 
+skin 1872 Bone.005 1.0000 
+skin 1873 Bone.005 0.5092 Bone.006 0.4908 
+skin 1874 Bone.005 1.0000 
+skin 1875 Bone.005 1.0000 
+skin 1876 Bone.005 0.3015 Bone.006 0.6985 
+skin 1877 Bone.005 0.5092 Bone.006 0.4908 
+skin 1878 Bone.006 1.0000 
+skin 1879 Bone.006 1.0000 
+skin 1880 Bone.006 1.0000 
+skin 1881 Bone.006 1.0000 
+skin 1882 Bone.006 1.0000 
+skin 1883 Bone.006 1.0000 
+skin 1884 Bone.006 1.0000 
+skin 1885 Bone.006 1.0000 
+skin 1886 Bone.006 1.0000 
+skin 1887 Bone.006 1.0000 
+skin 1888 Bone.005 1.0000 
+skin 1889 Bone.006 1.0000 
+skin 1890 Bone.005 0.4020 Bone.006 0.5980 
+skin 1891 Bone.006 1.0000 
+skin 1892 Bone.005 0.5092 Bone.006 0.4908 
+skin 1893 Bone.006 1.0000 
+skin 1894 Bone.006 1.0000 
+skin 1895 Bone.005 0.5092 Bone.006 0.4908 
+skin 1896 Bone.006 1.0000 
+skin 1897 Bone.006 1.0000 
+skin 1898 Bone.006 1.0000 
+skin 1899 Bone.006 1.0000 
+skin 1900 Bone.006 1.0000 
+skin 1901 Bone.006 1.0000 
+skin 1902 Bone.006 1.0000 
+skin 1903 Bone.005 1.0000 
+skin 1904 Bone.006 1.0000 
+skin 1905 Bone.005 1.0000 
+skin 1906 Bone.006 1.0000 
+skin 1907 Bone.006 1.0000 
+skin 1908 Bone.005 1.0000 
+skin 1909 Bone.005 1.0000 
+skin 1910 Bone.004 0.6276 Bone.005 0.3724 
+skin 1911 Bone.005 1.0000 
+skin 1912 Bone.005 1.0000 
+skin 1913 Bone.004 0.6276 Bone.005 0.3724 
+skin 1914 Bone.004 1.0000 
+skin 1915 Bone.004 1.0000 
+skin 1916 Bone.003 0.5872 Bone.004 0.4128 
+skin 1917 Bone.004 1.0000 
+skin 1918 Bone.004 1.0000 
+skin 1919 Bone.003 0.5872 Bone.004 0.4128 
+skin 1920 Bone.005 1.0000 
+skin 1921 Bone.004 0.5055 Bone.005 0.4945 
+skin 1922 Bone.005 1.0000 
+skin 1923 Bone.004 0.5055 Bone.005 0.4945 
+skin 1924 Bone.004 0.5938 Bone.005 0.4062 
+skin 1925 Bone.005 1.0000 
+skin 1926 Bone.005 1.0000 
+skin 1927 Bone.004 0.5938 Bone.005 0.4062 
+skin 1928 Bone.004 0.2880 Bone.005 0.7120 
+skin 1929 Bone.004 0.5938 Bone.005 0.4062 
+skin 1930 Bone.004 1.0000 
+skin 1931 Bone.004 0.2880 Bone.005 0.7120 
+skin 1932 Bone.006 0.6407 Bone.006Site 0.3593 
+skin 1933 Bone.006 1.0000 
+skin 1934 Bone.006 1.0000 
+skin 1935 Bone.006 1.0000 
+skin 1936 Bone.006 1.0000 
+skin 1937 Bone.006 0.7231 Bone.006Site 0.2769 
+skin 1938 Bone.005 1.0000 
+skin 1939 Bone.005 1.0000 
+skin 1940 Bone.005 1.0000 
+skin 1941 Bone.005 1.0000 
+skin 1942 Bone.005 0.3015 Bone.006 0.6985 
+skin 1943 Bone.005 1.0000 
+hier Bone Bone.001
+hier Bone.001 Bone.001_dup_0
+hier Bone.001 Bone.001_dup_1
+hier Bone.001 Bone.001_dup_2
+hier Bone.001_dup_0 Bone.002
+hier Bone.001_dup_1 Bone.003
+hier Bone.001_dup_2 Bone.007
+hier Bone.002 Bone.002Site
+hier Bone.003 Bone.004
+hier Bone.007 Bone.008
+hier Bone.004 Bone.005
+hier Bone.008 Bone.009
+hier Bone.005 Bone.006
+hier Bone.009 Bone.010
+hier Bone.006 Bone.006Site
+hier Bone.010 Bone.010Site

@@ -5,7 +5,9 @@
 # RigNet is made available under General Public License Version 3 (GPLv3), or under a Commercial License.
 # Please see the LICENSE README.txt file in the main directory for more information and instruction on using and licensing RigNet.
 # ---------------------------------------------------------------------------------------------------------
+
 import pdb
+
 import os
 from sys import platform
 import trimesh
@@ -52,7 +54,7 @@ def normalize_obj(mesh_v):
     return mesh_v, pivot, scale
 
 
-def create_single_data(mesh_filaname):
+def create_single_data(mesh_filaname, joints_filename):
     """
     create input data for the network. The data is wrapped by Data structure in pytorch-geometric library
     :param mesh_filaname: name of the input mesh
@@ -102,61 +104,20 @@ def create_single_data(mesh_filaname):
 
     with open(mesh_filaname.replace('_remesh.obj', '_normalized.binvox'), 'rb') as fvox:
         vox = binvox_rw.read_as_3d_array(fvox)
-
-    data = Data(x=v[:, 3:6], pos=v[:, 0:3], tpl_edge_index=tpl_e, geo_edge_index=geo_e, batch=batch)
-    return data, vox, surface_geodesic, translation_normalize, scale_normalize
-
-
-def predict_joints(input_data, vox, joint_pred_net, threshold, bandwidth=None, mesh_filename=None):
-    """
-    Predict joints
-    :param input_data: wrapped input data
-    :param vox: voxelized mesh
-    :param joint_pred_net: network for predicting joints
-    :param threshold: density threshold to filter out shifted points
-    :param bandwidth: bandwidth for meanshift clustering
-    :param mesh_filename: mesh filename for visualization
-    :return: wrapped data with predicted joints, pair-wise bone representation added.
-    """
-    data_displacement, _, attn_pred, bandwidth_pred = joint_pred_net(input_data)
-    y_pred = data_displacement + input_data.pos
-    y_pred_np = y_pred.data.cpu().numpy()
-    attn_pred_np = attn_pred.data.cpu().numpy()
-    y_pred_np, index_inside = inside_check(y_pred_np, vox)
-    attn_pred_np = attn_pred_np[index_inside, :]
-    y_pred_np = y_pred_np[attn_pred_np.squeeze() > 1e-3]
-    attn_pred_np = attn_pred_np[attn_pred_np.squeeze() > 1e-3]
-
-    # symmetrize points by reflecting
-    y_pred_np_reflect = y_pred_np * np.array([[-1, 1, 1]])
-    y_pred_np = np.concatenate((y_pred_np, y_pred_np_reflect), axis=0)
-    attn_pred_np = np.tile(attn_pred_np, (2, 1))
-
-    #img = draw_shifted_pts(mesh_filename, y_pred_np, weights=attn_pred_np)
-    if bandwidth is None:
-        bandwidth = bandwidth_pred.item()
-    y_pred_np = meanshift_cluster(y_pred_np, bandwidth, attn_pred_np, max_iter=40)
-    #img = draw_shifted_pts(mesh_filename, y_pred_np, weights=attn_pred_np)
-
-    Y_dist = np.sum(((y_pred_np[np.newaxis, ...] - y_pred_np[:, np.newaxis, :]) ** 2), axis=2)
-    density = np.maximum(bandwidth ** 2 - Y_dist, np.zeros(Y_dist.shape))
-    density = np.sum(density, axis=0)
-    density_sum = np.sum(density)
-    y_pred_np = y_pred_np[density / density_sum > threshold]
-    attn_pred_np = attn_pred_np[density / density_sum > threshold][:, 0]
-    density = density[density / density_sum > threshold]
-
-    #img = draw_shifted_pts(mesh_filename, y_pred_np, weights=attn_pred_np)
-    pred_joints = nms_meanshift(y_pred_np, density, bandwidth)
-    pred_joints, _ = flip(pred_joints)
-    #img = draw_shifted_pts(mesh_filename, pred_joints)
-
-    # prepare and add new data members
-    pairs = list(it.combinations(range(pred_joints.shape[0]), 2))
+    
+    with open(joints_filename) as jfile:
+        joints = []
+        for line in jfile:
+            joint = line.split()
+            if len(joint) == 4:
+                joints.append(np.array(list(map(float, joint[1:]))))
+    joints = np.array(joints)
+    
+    pairs = list(it.combinations(range(joints.shape[0]), 2))
     pair_attr = []
     for pr in pairs:
-        dist = np.linalg.norm(pred_joints[pr[0]] - pred_joints[pr[1]])
-        bone_samples = sample_on_bone(pred_joints[pr[0]], pred_joints[pr[1]])
+        dist = np.linalg.norm(joints[pr[0]] - joints[pr[1]])
+        bone_samples = sample_on_bone(joints[pr[0]], joints[pr[1]])
         bone_samples_inside, _ = inside_check(bone_samples, vox)
         outside_proportion = len(bone_samples_inside) / (len(bone_samples) + 1e-10)
         attr = np.array([dist, outside_proportion, 1])
@@ -165,17 +126,13 @@ def predict_joints(input_data, vox, joint_pred_net, threshold, bandwidth=None, m
     pair_attr = np.array(pair_attr)
     pairs = torch.from_numpy(pairs).float()
     pair_attr = torch.from_numpy(pair_attr).float()
-    pred_joints = torch.from_numpy(pred_joints).float()
-    joints_batch = torch.zeros(len(pred_joints), dtype=torch.long)
+    joints = torch.from_numpy(joints).float()
+    joints_batch = torch.zeros(len(joints), dtype=torch.long)
     pairs_batch = torch.zeros(len(pairs), dtype=torch.long)
 
-    input_data.joints = pred_joints
-    input_data.pairs = pairs
-    input_data.pair_attr = pair_attr
-    input_data.joints_batch = joints_batch
-    input_data.pairs_batch = pairs_batch
-    return input_data
-
+    data = Data(x=v[:, 3:6], pos=v[:, 0:3], tpl_edge_index=tpl_e, geo_edge_index=geo_e, batch=batch,
+                joints=joints, pairs=pairs, pair_attr=pair_attr, joints_batch=joints_batch, pairs_batch=pairs_batch)
+    return data, vox, surface_geodesic, translation_normalize, scale_normalize
 
 def predict_skeleton(input_data, vox, root_pred_net, bone_pred_net, mesh_filename):
     """
@@ -384,13 +341,6 @@ if __name__ == '__main__':
     print("loading all networks...")
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-    jointNet = JOINTNET()
-    jointNet.to(device)
-    jointNet.eval()
-    jointNet_checkpoint = torch.load('checkpoints/gcn_meanshift/model_best.pth.tar')
-    jointNet.load_state_dict(jointNet_checkpoint['state_dict'])
-    print("     joint prediction network loaded.")
-
     rootNet = ROOTNET()
     rootNet.to(device)
     rootNet.eval()
@@ -416,7 +366,8 @@ if __name__ == '__main__':
     # To process other input characters, please first try the learned bandwidth (0.0429 in the provided model), and the default threshold 1e-5.
     # We also use these two default parameters for processing all test models in batch.
 
-    model_id, bandwidth, threshold = "rigging_test", 0.042, 2e-5 # riggint_test is 1347
+    model_id, bandwidth, threshold = "test", 0.0429, 1e-5
+    # model_id, bandwidth, threshold = "test2", 0.0429, 1e-5
     #model_id, bandwidth, threshold = "smith", None, 1e-5
     #model_id, bandwidth, threshold = "17872", 0.045, 0.75e-5
     #model_id, bandwidth, threshold = "8210", 0.05, 1e-5
@@ -438,23 +389,23 @@ if __name__ == '__main__':
     # create data used for inferece
     print("creating data for model ID {:s}".format(model_id))
     mesh_filename = os.path.join(input_folder, '{:s}_remesh.obj'.format(model_id))
-    data, vox, surface_geodesic, translation_normalize, scale_normalize = create_single_data(mesh_filename)
+    joints_filename = os.path.join(input_folder, '{:s}_joints.txt'.format(model_id))
+    data, vox, surface_geodesic, translation_normalize, scale_normalize = create_single_data(mesh_filename, joints_filename)
     data.to(device)
 
-    print("predicting joints")
-    data = predict_joints(data, vox, jointNet, threshold, bandwidth=bandwidth,
-                          mesh_filename=mesh_filename.replace("_remesh.obj", "_normalized.obj"))
-    data.to(device)
     print("predicting connectivity")
+    # pdb.set_trace()
     pred_skeleton = predict_skeleton(data, vox, rootNet, boneNet,
                                      mesh_filename=mesh_filename.replace("_remesh.obj", "_normalized.obj"))
     print("predicting skinning")
+    pdb.set_trace()
     pred_rig = predict_skinning(data, pred_skeleton, skinNet, surface_geodesic,
                                 mesh_filename.replace("_remesh.obj", "_normalized.obj"),
                                 subsampling=downsample_skinning)
 
     # here we reverse the normalization to the original scale and position
     pred_rig.normalize(scale_normalize, -translation_normalize)
+    # pdb.set_trace()
 
     print("Saving result")
     if True:

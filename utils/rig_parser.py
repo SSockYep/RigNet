@@ -6,7 +6,9 @@
 # Please see the LICENSE README.txt file in the main directory for more information and instruction on using and licensing RigNet.
 #-------------------------------------------------------------------------------
 
+import pdb
 import numpy as np
+from utils.bvh import Bvh
 from utils.tree_utils import TreeNode
 try:
     import Queue as Q  # ver. < 3.0
@@ -24,6 +26,40 @@ class Info:
         self.root = None
         if filename is not None:
             self.load(filename)
+    
+    def bvh_load(self, filename):
+        def dfs(node, bvh_joint):
+            children_joints = [j for j in bvh_joint.filter('JOINT')]
+            if len(children_joints) == 0:
+                child_joint = next(bvh_joint.filter('End'))
+                child_name = bvh_joint.value[1]+bvh_joint['End'][0]
+                offset = list(map(float, child_joint['OFFSET']))
+                child_pos = np.array(self.joint_pos[node.name]) + np.array([offset[0],offset[2],-offset[1]])
+                self.joint_pos[child_name]=child_pos.tolist()
+                child_node = TreeNode(child_name, tuple(child_pos.tolist()))
+                child_node.parent = node
+                node.children.append(child_node)
+                return
+
+            for child_joint in children_joints:
+                child_name = child_joint.value[1]
+                offset = list(map(float, child_joint['OFFSET']))
+                child_pos = np.array(self.joint_pos[node.name]) + np.array([offset[0],offset[2],-offset[1]])
+                self.joint_pos[child_name]=child_pos.tolist()
+                child_node = TreeNode(child_name, tuple(child_pos.tolist()))
+                child_node.parent = node
+                node.children.append(child_node)
+                dfs(child_node, child_joint)
+
+        with open(filename, 'r') as bvh:
+            bvh_data = Bvh(bvh.read())
+            root_joint = next(bvh_data.root.filter('ROOT'))
+            root_name = bvh_data.root['ROOT'][0]
+            root_pos = list(map(float, root_joint['OFFSET']))
+            # bvh 파일과 obj에 저장된 좌표계가 다름
+            self.joint_pos[root_name] = [root_pos[0], root_pos[2], -root_pos[1]]
+            self.root=TreeNode(root_name, (root_pos[0], root_pos[2], -root_pos[1]))
+            dfs(self.root, root_joint)
 
     def load(self, filename):
         with open(filename, 'r') as f_txt:
